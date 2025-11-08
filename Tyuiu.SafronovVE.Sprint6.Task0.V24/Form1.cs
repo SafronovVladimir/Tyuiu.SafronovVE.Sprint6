@@ -21,5 +21,9 @@ namespace Tyuiu.SafronovVE.Sprint6.Task0.V24
             }
         }
 
+        private void aboutAuthor_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Task 0 выполнил студент группы ИБКСб-25-1 Сафронов Владимир Евгеньевич", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

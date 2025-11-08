@@ -38,6 +38,7 @@
             result = new TextBox();
             resultText = new Label();
             completeOperation = new Button();
+            aboutAuthor = new Button();
             ((System.ComponentModel.ISupportInitialize)formulaPicture).BeginInit();
             condition.SuspendLayout();
             inputData.SuspendLayout();
@@ -140,11 +141,22 @@
             completeOperation.UseVisualStyleBackColor = true;
             completeOperation.Click += completeOperation_Click;
             // 
+            // aboutAuthor
+            // 
+            aboutAuthor.Location = new Point(355, 338);
+            aboutAuthor.Name = "aboutAuthor";
+            aboutAuthor.Size = new Size(47, 45);
+            aboutAuthor.TabIndex = 5;
+            aboutAuthor.Text = "?";
+            aboutAuthor.UseVisualStyleBackColor = true;
+            aboutAuthor.Click += aboutAuthor_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(548, 409);
+            Controls.Add(aboutAuthor);
             Controls.Add(completeOperation);
             Controls.Add(outputData);
             Controls.Add(inputData);
@@ -173,5 +185,6 @@
         private TextBox result;
         private Label resultText;
         private Button completeOperation;
+        private Button aboutAuthor;
     }
 }

@@ -11,7 +11,7 @@ namespace Tyuiu.SafronovVE.Sprint6.Task0.V24.Test
             int x = 3;
             var wait = 1024;
             var res = ds.Calculate(x);
-            Assert.AreEqual(wait, res);
+            Assert.AreEqual(res, wait);
         }
     }
 }
