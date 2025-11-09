@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22 d17.14
+VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.SafronovVE.Sprint6.Task0.V24", "Tyuiu.SafronovVE.Sprint6.Task0.V24\Tyuiu.SafronovVE.Sprint6.Task0.V24.csproj", "{3A7A50C1-93A9-42F8-8880-3DC2D6738926}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.SafronovVE.Sprint6.Task0.V24.Lib", "Tyuiu.SafronovVE.Sprint6.Task0.V24.Lib\Tyuiu.SafronovVE.Sprint6.Task0.V24.Lib.csproj", "{36E5E143-DD19-4DD7-A80F-396080007475}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.SafronovVE.Sprint6.Task0.V24.Test", "Tyuiu.SafronovVE.Sprint6.Task0.V24.Test\Tyuiu.SafronovVE.Sprint6.Task0.V24.Test.csproj", "{1F0408C6-8EE2-4270-9B1E-8D9427531B9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task0", "Task0", "{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +32,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3A7A50C1-93A9-42F8-8880-3DC2D6738926} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+		{36E5E143-DD19-4DD7-A80F-396080007475} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+		{1F0408C6-8EE2-4270-9B1E-8D9427531B9C} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {72A6FF8B-3D00-4BB4-B53C-5A7959C83D2F}
