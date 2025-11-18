@@ -1,3 +1,4 @@
+using System.Windows.Forms.DataVisualization.Charting;
 using Tyuiu.SafronovVE.Sprint6.Task2.V25.Lib;
 namespace Tyuiu.SafronovVE.Sprint6.Task2.V25
 {
@@ -29,6 +30,8 @@ namespace Tyuiu.SafronovVE.Sprint6.Task2.V25
 
                 chartFunction.ChartAreas[0].AxisX.Title = "Îñü X";
                 chartFunction.ChartAreas[0].AxisY.Title = "Îñü Y";
+
+                chartFunction.Series[0].ChartType = SeriesChartType.Spline;
 
                 for (int i = 0; i < len; i++)
                 {
