@@ -155,7 +155,7 @@ namespace Tyuiu.SafronovVE.Sprint6.Task4.V6
             outputTextBox.Multiline = true;
             outputTextBox.Name = "outputTextBox";
             outputTextBox.ScrollBars = ScrollBars.Vertical;
-            outputTextBox.Size = new Size(256, 454);
+            outputTextBox.Size = new Size(264, 454);
             outputTextBox.TabIndex = 5;
             // 
             // chartFunction
