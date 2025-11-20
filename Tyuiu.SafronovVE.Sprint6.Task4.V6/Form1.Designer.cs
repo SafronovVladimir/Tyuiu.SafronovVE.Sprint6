@@ -171,7 +171,7 @@ namespace Tyuiu.SafronovVE.Sprint6.Task4.V6
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             chartFunction.Series.Add(series1);
-            chartFunction.Size = new Size(951, 465);
+            chartFunction.Size = new Size(951, 477);
             chartFunction.TabIndex = 7;
             chartFunction.Text = "График функции";
             title1.Font = new Font("Microsoft Sans Serif", 16F);
