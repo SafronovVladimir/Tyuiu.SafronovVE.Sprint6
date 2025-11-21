@@ -26,12 +26,6 @@ namespace Tyuiu.SafronovVE.Sprint6.Task6.V16
             textBoxOut.Text = ds.CollectTextFromFile(openFilePath);
         }
 
-        private void buttonAbout_Click(object sender, EventArgs e)
-        {
-            FormAbout formAbout = new FormAbout();
-            formAbout.ShowDialog();
-        }
-
         private void buttonAbout_Click_1(object sender, EventArgs e)
         {
             FormAbout formAbout = new FormAbout();
