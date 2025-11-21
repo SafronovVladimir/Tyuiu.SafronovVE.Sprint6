@@ -1,4 +1,6 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.Intrinsics.Arm;
+using System.Security.Cryptography.X509Certificates;
 using tyuiu.cources.programming.interfaces.Sprint6;
 namespace Tyuiu.SafronovVE.Sprint6.Task5.V19.Lib
 {
@@ -8,13 +10,31 @@ namespace Tyuiu.SafronovVE.Sprint6.Task5.V19.Lib
         {
             string[] strings = File.ReadAllLines(path);
             var len = strings.Length;
-            double[] doubles = new double[len];
 
+            int k = 0;
             for (int i = 0; i < len; i++)
-            {
-                doubles[i] = Double.Parse(strings[i]);
+            {   
+                double value = Double.Parse(strings[i]);
+                if (double.IsInteger(value))
+                {
+                    k++;
+                }
             }
-            return doubles;
+
+            double[] res = new double[k];
+
+            int index = 0;
+            
+            for (int i = 0; i < strings.Length; i++)
+            {
+                double value = double.Parse(strings[i]);
+                if (double.IsInteger(value))
+                {
+                    res[index++] = value;
+                }
+            }
+
+            return res;
         }
     }
 }
