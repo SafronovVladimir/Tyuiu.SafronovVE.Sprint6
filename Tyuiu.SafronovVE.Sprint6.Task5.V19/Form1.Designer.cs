@@ -51,6 +51,7 @@
             // 
             // conditionTextBox
             // 
+            conditionTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             conditionTextBox.BackColor = SystemColors.Control;
             conditionTextBox.BorderStyle = BorderStyle.None;
             conditionTextBox.Location = new Point(7, 23);
@@ -76,6 +77,7 @@
             // 
             // infoButton
             // 
+            infoButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             infoButton.BackColor = Color.RoyalBlue;
             infoButton.Location = new Point(752, 11);
             infoButton.Name = "infoButton";
@@ -87,6 +89,7 @@
             // 
             // openFileButton
             // 
+            openFileButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             openFileButton.BackColor = SystemColors.HotTrack;
             openFileButton.Location = new Point(639, 11);
             openFileButton.Name = "openFileButton";
@@ -98,6 +101,7 @@
             // 
             // doneButton
             // 
+            doneButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             doneButton.BackColor = Color.FromArgb(0, 192, 0);
             doneButton.Location = new Point(526, 11);
             doneButton.Name = "doneButton";
@@ -109,6 +113,7 @@
             // 
             // conditionGroupBox
             // 
+            conditionGroupBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             conditionGroupBox.Controls.Add(conditionTextBox);
             conditionGroupBox.Location = new Point(8, 3);
             conditionGroupBox.Name = "conditionGroupBox";
@@ -119,6 +124,7 @@
             // 
             // inputGroupBox
             // 
+            inputGroupBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             inputGroupBox.Controls.Add(dataGridView);
             inputGroupBox.Location = new Point(9, 101);
             inputGroupBox.Name = "inputGroupBox";
@@ -129,6 +135,7 @@
             // 
             // dataGridView
             // 
+            dataGridView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2 });
             dataGridView.Location = new Point(0, 26);
@@ -157,6 +164,7 @@
             // 
             // chartDiag
             // 
+            chartDiag.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             chartArea1.Name = "ChartArea1";
             chartDiag.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
