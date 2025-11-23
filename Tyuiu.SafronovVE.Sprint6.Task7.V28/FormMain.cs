@@ -1,4 +1,5 @@
 using System.Diagnostics.Eventing.Reader;
+using System.IO;
 using Tyuiu.SafronovVE.Sprint6.Task7.V28.Lib;
 namespace Tyuiu.SafronovVE.Sprint6.Task7.V28
 {
@@ -15,12 +16,32 @@ namespace Tyuiu.SafronovVE.Sprint6.Task7.V28
 
         DataService ds = new DataService();
 
-        private void buttonOpenFile_Click(object sender, EventArgs e)
+        int[,] GetMass(string filePath)
+        {
+            string[] strings = File.ReadAllLines(filePath);
+
+            int rows = strings.GetUpperBound(0) + 1;
+            int cols = strings[0].Split(';').GetUpperBound(0) + 1;
+
+            int[,] result = new int[rows, cols];
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < cols; j++)
+                {
+                    result[i, j] = Int32.Parse(strings[i].Split(";")[j]);
+                }
+            }
+
+            return result;
+        }
+
+private void buttonOpenFile_Click(object sender, EventArgs e)
         {
             openFileDialog.ShowDialog();
             openFilePath = openFileDialog.FileName;
 
-            var matrix = ds.GetMatrix(openFilePath);
+            var matrix = GetMass(openFilePath);
 
             rows = matrix.GetUpperBound(0) + 1;
             cols = matrix.GetUpperBound(1) + 1;
@@ -49,8 +70,7 @@ namespace Tyuiu.SafronovVE.Sprint6.Task7.V28
 
         private void buttonDone_Click(object sender, EventArgs e)
         {
-            var matrix = ds.GetMatrix(openFilePath);
-            var valueArray = ds.TransformMatrix(matrix);
+            var valueArray = ds.GetMatrix(openFilePath);
 
             for (int r = 0; r < rows; r++)
             {

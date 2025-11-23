@@ -22,22 +22,17 @@ namespace Tyuiu.SafronovVE.Sprint6.Task7.V28.Lib
                 }
             }
 
-            return result;
-        }
-        public int[,] TransformMatrix(int[,] matrix)
-        {
-            int rows = matrix.GetLength(0) + 1;
-            int cols = matrix.GetLength(1);
-
             for (int j = 0; j < cols; j++)
             {
-                if (matrix[6, j] != 13)
+                if (result[6, j] != 13)
                 {
-                    matrix[6, j] = 0;
+                    result[6, j] = 0;
                 }
             }
 
-            return matrix;
+            return result;
         }
+
+
     }
 }
