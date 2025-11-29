@@ -176,6 +176,7 @@
             Controls.Add(groupBoxIn);
             Controls.Add(groupBoxOut);
             Controls.Add(groupBoxTask);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
