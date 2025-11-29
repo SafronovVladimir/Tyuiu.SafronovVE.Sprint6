@@ -169,7 +169,7 @@
             MaximizeBox = false;
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Спринт 6 | Таск 0 | Вариант 24 | Сафронов В.Е. ";
+            Text = "Спринт 6 | Таск 0 | Вариант 24 | Сафронов В.Е.";
             Load += FormMain_Load;
             groupBoxTask.ResumeLayout(false);
             groupBoxTask.PerformLayout();
