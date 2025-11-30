@@ -1,6 +1,6 @@
 ﻿namespace Tyuiu.SafronovVE.Sprint6.Task0.V24
 {
-    partial class FormMain
+    partial class FormMain_SVE
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,171 +28,171 @@
         /// </summary>
         private void InitializeComponent()
         {
-            groupBoxTask = new GroupBox();
-            pictureBoxFormula = new PictureBox();
-            textBoxTask = new TextBox();
-            groupBoxInput = new GroupBox();
-            textBoxVarX = new TextBox();
-            labelVarX = new Label();
-            groupBoxOutput = new GroupBox();
-            textBoxResult = new TextBox();
-            labelResult = new Label();
-            buttonDone = new Button();
-            buttonHelp = new Button();
-            groupBoxTask.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxFormula).BeginInit();
-            groupBoxInput.SuspendLayout();
-            groupBoxOutput.SuspendLayout();
+            groupBoxTask_SVE = new GroupBox();
+            pictureBoxFormula_SVE = new PictureBox();
+            textBoxTask_SVE = new TextBox();
+            groupBoxInput_SVE = new GroupBox();
+            textBoxVarX_SVE = new TextBox();
+            labelVarX_SVE = new Label();
+            groupBoxOutput_SVE = new GroupBox();
+            textBoxResult_SVE = new TextBox();
+            labelResult_SVE = new Label();
+            buttonDone_SVE = new Button();
+            buttonHelp_SVE = new Button();
+            groupBoxTask_SVE.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_SVE).BeginInit();
+            groupBoxInput_SVE.SuspendLayout();
+            groupBoxOutput_SVE.SuspendLayout();
             SuspendLayout();
             // 
-            // groupBoxTask
+            // groupBoxTask_SVE
             // 
-            groupBoxTask.Controls.Add(pictureBoxFormula);
-            groupBoxTask.Controls.Add(textBoxTask);
-            groupBoxTask.Location = new Point(12, 12);
-            groupBoxTask.Name = "groupBoxTask";
-            groupBoxTask.Size = new Size(776, 231);
-            groupBoxTask.TabIndex = 0;
-            groupBoxTask.TabStop = false;
-            groupBoxTask.Text = "Условие";
+            groupBoxTask_SVE.Controls.Add(pictureBoxFormula_SVE);
+            groupBoxTask_SVE.Controls.Add(textBoxTask_SVE);
+            groupBoxTask_SVE.Location = new Point(12, 12);
+            groupBoxTask_SVE.Name = "groupBoxTask_SVE";
+            groupBoxTask_SVE.Size = new Size(776, 231);
+            groupBoxTask_SVE.TabIndex = 0;
+            groupBoxTask_SVE.TabStop = false;
+            groupBoxTask_SVE.Text = "Условие";
             // 
-            // pictureBoxFormula
+            // pictureBoxFormula_SVE
             // 
-            pictureBoxFormula.Image = Properties.Resources.unnamed;
-            pictureBoxFormula.Location = new Point(568, 26);
-            pictureBoxFormula.Name = "pictureBoxFormula";
-            pictureBoxFormula.Size = new Size(202, 82);
-            pictureBoxFormula.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBoxFormula.TabIndex = 1;
-            pictureBoxFormula.TabStop = false;
+            pictureBoxFormula_SVE.Image = Properties.Resources.unnamed;
+            pictureBoxFormula_SVE.Location = new Point(568, 26);
+            pictureBoxFormula_SVE.Name = "pictureBoxFormula_SVE";
+            pictureBoxFormula_SVE.Size = new Size(202, 82);
+            pictureBoxFormula_SVE.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxFormula_SVE.TabIndex = 1;
+            pictureBoxFormula_SVE.TabStop = false;
             // 
-            // textBoxTask
+            // textBoxTask_SVE
             // 
-            textBoxTask.BackColor = SystemColors.Control;
-            textBoxTask.BorderStyle = BorderStyle.None;
-            textBoxTask.Location = new Point(6, 26);
-            textBoxTask.Multiline = true;
-            textBoxTask.Name = "textBoxTask";
-            textBoxTask.Size = new Size(556, 191);
-            textBoxTask.TabIndex = 0;
-            textBoxTask.Text = "Вычислить выражение по формуле\r\n";
+            textBoxTask_SVE.BackColor = SystemColors.Control;
+            textBoxTask_SVE.BorderStyle = BorderStyle.None;
+            textBoxTask_SVE.Location = new Point(6, 26);
+            textBoxTask_SVE.Multiline = true;
+            textBoxTask_SVE.Name = "textBoxTask_SVE";
+            textBoxTask_SVE.Size = new Size(556, 191);
+            textBoxTask_SVE.TabIndex = 0;
+            textBoxTask_SVE.Text = "Вычислить выражение по формуле\r\n";
             // 
-            // groupBoxInput
+            // groupBoxInput_SVE
             // 
-            groupBoxInput.Controls.Add(textBoxVarX);
-            groupBoxInput.Controls.Add(labelVarX);
-            groupBoxInput.Location = new Point(12, 249);
-            groupBoxInput.Name = "groupBoxInput";
-            groupBoxInput.Size = new Size(524, 110);
-            groupBoxInput.TabIndex = 1;
-            groupBoxInput.TabStop = false;
-            groupBoxInput.Text = "Ввод данных";
+            groupBoxInput_SVE.Controls.Add(textBoxVarX_SVE);
+            groupBoxInput_SVE.Controls.Add(labelVarX_SVE);
+            groupBoxInput_SVE.Location = new Point(12, 249);
+            groupBoxInput_SVE.Name = "groupBoxInput_SVE";
+            groupBoxInput_SVE.Size = new Size(524, 110);
+            groupBoxInput_SVE.TabIndex = 1;
+            groupBoxInput_SVE.TabStop = false;
+            groupBoxInput_SVE.Text = "Ввод данных";
             // 
-            // textBoxVarX
+            // textBoxVarX_SVE
             // 
-            textBoxVarX.BackColor = SystemColors.Window;
-            textBoxVarX.Location = new Point(15, 56);
-            textBoxVarX.Name = "textBoxVarX";
-            textBoxVarX.Size = new Size(114, 27);
-            textBoxVarX.TabIndex = 1;
-            textBoxVarX.KeyPress += textBoxVarX_KeyPress;
+            textBoxVarX_SVE.BackColor = SystemColors.Window;
+            textBoxVarX_SVE.Location = new Point(15, 56);
+            textBoxVarX_SVE.Name = "textBoxVarX_SVE";
+            textBoxVarX_SVE.Size = new Size(114, 27);
+            textBoxVarX_SVE.TabIndex = 1;
+            textBoxVarX_SVE.KeyPress += textBoxVarX_SVE_KeyPress;
             // 
-            // labelVarX
+            // labelVarX_SVE
             // 
-            labelVarX.AutoSize = true;
-            labelVarX.Location = new Point(15, 33);
-            labelVarX.Name = "labelVarX";
-            labelVarX.Size = new Size(114, 20);
-            labelVarX.TabIndex = 0;
-            labelVarX.Text = "Переменная X:";
+            labelVarX_SVE.AutoSize = true;
+            labelVarX_SVE.Location = new Point(15, 33);
+            labelVarX_SVE.Name = "labelVarX_SVE";
+            labelVarX_SVE.Size = new Size(114, 20);
+            labelVarX_SVE.TabIndex = 0;
+            labelVarX_SVE.Text = "Переменная X:";
             // 
-            // groupBoxOutput
+            // groupBoxOutput_SVE
             // 
-            groupBoxOutput.Controls.Add(textBoxResult);
-            groupBoxOutput.Controls.Add(labelResult);
-            groupBoxOutput.Location = new Point(542, 249);
-            groupBoxOutput.Name = "groupBoxOutput";
-            groupBoxOutput.Size = new Size(246, 110);
-            groupBoxOutput.TabIndex = 2;
-            groupBoxOutput.TabStop = false;
-            groupBoxOutput.Text = "Вывод данных";
+            groupBoxOutput_SVE.Controls.Add(textBoxResult_SVE);
+            groupBoxOutput_SVE.Controls.Add(labelResult_SVE);
+            groupBoxOutput_SVE.Location = new Point(542, 249);
+            groupBoxOutput_SVE.Name = "groupBoxOutput_SVE";
+            groupBoxOutput_SVE.Size = new Size(246, 110);
+            groupBoxOutput_SVE.TabIndex = 2;
+            groupBoxOutput_SVE.TabStop = false;
+            groupBoxOutput_SVE.Text = "Вывод данных";
             // 
-            // textBoxResult
+            // textBoxResult_SVE
             // 
-            textBoxResult.Location = new Point(15, 56);
-            textBoxResult.Name = "textBoxResult";
-            textBoxResult.ReadOnly = true;
-            textBoxResult.Size = new Size(225, 27);
-            textBoxResult.TabIndex = 1;
+            textBoxResult_SVE.Location = new Point(15, 56);
+            textBoxResult_SVE.Name = "textBoxResult_SVE";
+            textBoxResult_SVE.ReadOnly = true;
+            textBoxResult_SVE.Size = new Size(225, 27);
+            textBoxResult_SVE.TabIndex = 1;
             // 
-            // labelResult
+            // labelResult_SVE
             // 
-            labelResult.AutoSize = true;
-            labelResult.Location = new Point(15, 33);
-            labelResult.Name = "labelResult";
-            labelResult.Size = new Size(78, 20);
-            labelResult.TabIndex = 0;
-            labelResult.Text = "Результат:";
+            labelResult_SVE.AutoSize = true;
+            labelResult_SVE.Location = new Point(15, 33);
+            labelResult_SVE.Name = "labelResult_SVE";
+            labelResult_SVE.Size = new Size(78, 20);
+            labelResult_SVE.TabIndex = 0;
+            labelResult_SVE.Text = "Результат:";
             // 
-            // buttonDone
+            // buttonDone_SVE
             // 
-            buttonDone.Location = new Point(601, 365);
-            buttonDone.Name = "buttonDone";
-            buttonDone.Size = new Size(187, 46);
-            buttonDone.TabIndex = 3;
-            buttonDone.Text = "Выполнить";
-            buttonDone.UseVisualStyleBackColor = true;
-            buttonDone.Click += buttonDone_Click;
+            buttonDone_SVE.Location = new Point(601, 365);
+            buttonDone_SVE.Name = "buttonDone_SVE";
+            buttonDone_SVE.Size = new Size(187, 46);
+            buttonDone_SVE.TabIndex = 3;
+            buttonDone_SVE.Text = "Выполнить";
+            buttonDone_SVE.UseVisualStyleBackColor = true;
+            buttonDone_SVE.Click += buttonDone_SVE_Click;
             // 
-            // buttonHelp
+            // buttonHelp_SVE
             // 
-            buttonHelp.FlatStyle = FlatStyle.Flat;
-            buttonHelp.Location = new Point(542, 365);
-            buttonHelp.Name = "buttonHelp";
-            buttonHelp.Size = new Size(53, 46);
-            buttonHelp.TabIndex = 4;
-            buttonHelp.Text = "?";
-            buttonHelp.UseVisualStyleBackColor = true;
-            buttonHelp.Click += buttonHelp_Click;
+            buttonHelp_SVE.FlatStyle = FlatStyle.Flat;
+            buttonHelp_SVE.Location = new Point(542, 365);
+            buttonHelp_SVE.Name = "buttonHelp_SVE";
+            buttonHelp_SVE.Size = new Size(53, 46);
+            buttonHelp_SVE.TabIndex = 4;
+            buttonHelp_SVE.Text = "?";
+            buttonHelp_SVE.UseVisualStyleBackColor = true;
+            buttonHelp_SVE.Click += buttonHelp_SVE_Click;
             // 
-            // FormMain
+            // FormMain_SVE
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 425);
-            Controls.Add(buttonHelp);
-            Controls.Add(buttonDone);
-            Controls.Add(groupBoxOutput);
-            Controls.Add(groupBoxInput);
-            Controls.Add(groupBoxTask);
+            Controls.Add(buttonHelp_SVE);
+            Controls.Add(buttonDone_SVE);
+            Controls.Add(groupBoxOutput_SVE);
+            Controls.Add(groupBoxInput_SVE);
+            Controls.Add(groupBoxTask_SVE);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
-            Name = "FormMain";
+            Name = "FormMain_SVE";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Спринт 6 | Таск 0 | Вариант 24 | Сафронов В.Е.";
             Load += FormMain_Load;
-            groupBoxTask.ResumeLayout(false);
-            groupBoxTask.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxFormula).EndInit();
-            groupBoxInput.ResumeLayout(false);
-            groupBoxInput.PerformLayout();
-            groupBoxOutput.ResumeLayout(false);
-            groupBoxOutput.PerformLayout();
+            groupBoxTask_SVE.ResumeLayout(false);
+            groupBoxTask_SVE.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_SVE).EndInit();
+            groupBoxInput_SVE.ResumeLayout(false);
+            groupBoxInput_SVE.PerformLayout();
+            groupBoxOutput_SVE.ResumeLayout(false);
+            groupBoxOutput_SVE.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private GroupBox groupBoxTask;
-        private TextBox textBoxTask;
-        private PictureBox pictureBoxFormula;
-        private GroupBox groupBoxInput;
-        private TextBox textBoxVarX;
-        private Label labelVarX;
-        private GroupBox groupBoxOutput;
-        private TextBox textBoxResult;
-        private Label labelResult;
-        private Button buttonDone;
-        private Button buttonHelp;
+        private GroupBox groupBoxTask_SVE;
+        private TextBox textBoxTask_SVE;
+        private PictureBox pictureBoxFormula_SVE;
+        private GroupBox groupBoxInput_SVE;
+        private TextBox textBoxVarX_SVE;
+        private Label labelVarX_SVE;
+        private GroupBox groupBoxOutput_SVE;
+        private TextBox textBoxResult_SVE;
+        private Label labelResult_SVE;
+        private Button buttonDone_SVE;
+        private Button buttonHelp_SVE;
     }
 }
