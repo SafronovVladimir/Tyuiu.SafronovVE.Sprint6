@@ -1,6 +1,6 @@
 ﻿namespace Tyuiu.SafronovVE.Sprint6.Task2.V25
 {
-    partial class FormMain
+    partial class FormMain_SVE
     {
         /// <summary>
         ///  Required designer variable.
@@ -31,160 +31,160 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            groupBoxTask = new GroupBox();
-            textBoxTask = new TextBox();
-            groupBoxInput = new GroupBox();
-            textBoxStopStep = new TextBox();
-            textBoxStartStep = new TextBox();
-            labelStopStep = new Label();
-            labelStartStep = new Label();
-            buttonHelp = new Button();
-            buttonDone = new Button();
-            groupBoxOutput = new GroupBox();
-            chartFunction = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            dataGridViewFunction = new DataGridView();
+            groupBoxTask_SVE = new GroupBox();
+            textBoxTask_SVE = new TextBox();
+            groupBoxInput_SVE = new GroupBox();
+            textBoxStopStep_SVE = new TextBox();
+            textBoxStartStep_SVE = new TextBox();
+            labelStopStep_SVE = new Label();
+            labelStartStep_SVE = new Label();
+            buttonHelp_SVE = new Button();
+            buttonDone_SVE = new Button();
+            groupBoxOutput_SVE = new GroupBox();
+            chartFunction_SVE = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            dataGridViewFunction_SVE = new DataGridView();
             X = new DataGridViewTextBoxColumn();
             Y = new DataGridViewTextBoxColumn();
-            labelResult = new Label();
-            groupBoxTask.SuspendLayout();
-            groupBoxInput.SuspendLayout();
-            groupBoxOutput.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)chartFunction).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewFunction).BeginInit();
+            labelResult_SVE = new Label();
+            groupBoxTask_SVE.SuspendLayout();
+            groupBoxInput_SVE.SuspendLayout();
+            groupBoxOutput_SVE.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)chartFunction_SVE).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewFunction_SVE).BeginInit();
             SuspendLayout();
             // 
-            // groupBoxTask
+            // groupBoxTask_SVE
             // 
-            groupBoxTask.Controls.Add(textBoxTask);
-            groupBoxTask.Location = new Point(12, 12);
-            groupBoxTask.Name = "groupBoxTask";
-            groupBoxTask.Size = new Size(600, 326);
-            groupBoxTask.TabIndex = 0;
-            groupBoxTask.TabStop = false;
-            groupBoxTask.Text = "Условие";
+            groupBoxTask_SVE.Controls.Add(textBoxTask_SVE);
+            groupBoxTask_SVE.Location = new Point(12, 12);
+            groupBoxTask_SVE.Name = "groupBoxTask_SVE";
+            groupBoxTask_SVE.Size = new Size(600, 326);
+            groupBoxTask_SVE.TabIndex = 0;
+            groupBoxTask_SVE.TabStop = false;
+            groupBoxTask_SVE.Text = "Условие";
             // 
-            // textBoxTask
+            // textBoxTask_SVE
             // 
-            textBoxTask.BackColor = SystemColors.Control;
-            textBoxTask.BorderStyle = BorderStyle.None;
-            textBoxTask.Location = new Point(6, 26);
-            textBoxTask.Multiline = true;
-            textBoxTask.Name = "textBoxTask";
-            textBoxTask.ReadOnly = true;
-            textBoxTask.Size = new Size(588, 294);
-            textBoxTask.TabIndex = 0;
-            textBoxTask.Text = "Протабулировать функцию на заданном диапазоне.\r\nРезультат вывести в DataGridView и построить график функции.";
+            textBoxTask_SVE.BackColor = SystemColors.Control;
+            textBoxTask_SVE.BorderStyle = BorderStyle.None;
+            textBoxTask_SVE.Location = new Point(6, 26);
+            textBoxTask_SVE.Multiline = true;
+            textBoxTask_SVE.Name = "textBoxTask_SVE";
+            textBoxTask_SVE.ReadOnly = true;
+            textBoxTask_SVE.Size = new Size(588, 294);
+            textBoxTask_SVE.TabIndex = 0;
+            textBoxTask_SVE.Text = "Протабулировать функцию на заданном диапазоне.\r\nРезультат вывести в DataGridView и построить график функции.";
             // 
-            // groupBoxInput
+            // groupBoxInput_SVE
             // 
-            groupBoxInput.Controls.Add(textBoxStopStep);
-            groupBoxInput.Controls.Add(textBoxStartStep);
-            groupBoxInput.Controls.Add(labelStopStep);
-            groupBoxInput.Controls.Add(labelStartStep);
-            groupBoxInput.Location = new Point(12, 344);
-            groupBoxInput.Name = "groupBoxInput";
-            groupBoxInput.Size = new Size(362, 80);
-            groupBoxInput.TabIndex = 1;
-            groupBoxInput.TabStop = false;
-            groupBoxInput.Text = "Ввод данных";
+            groupBoxInput_SVE.Controls.Add(textBoxStopStep_SVE);
+            groupBoxInput_SVE.Controls.Add(textBoxStartStep_SVE);
+            groupBoxInput_SVE.Controls.Add(labelStopStep_SVE);
+            groupBoxInput_SVE.Controls.Add(labelStartStep_SVE);
+            groupBoxInput_SVE.Location = new Point(12, 344);
+            groupBoxInput_SVE.Name = "groupBoxInput_SVE";
+            groupBoxInput_SVE.Size = new Size(362, 80);
+            groupBoxInput_SVE.TabIndex = 1;
+            groupBoxInput_SVE.TabStop = false;
+            groupBoxInput_SVE.Text = "Ввод данных";
             // 
-            // textBoxStopStep
+            // textBoxStopStep_SVE
             // 
-            textBoxStopStep.Location = new Point(192, 46);
-            textBoxStopStep.Name = "textBoxStopStep";
-            textBoxStopStep.Size = new Size(157, 27);
-            textBoxStopStep.TabIndex = 3;
+            textBoxStopStep_SVE.Location = new Point(192, 46);
+            textBoxStopStep_SVE.Name = "textBoxStopStep_SVE";
+            textBoxStopStep_SVE.Size = new Size(157, 27);
+            textBoxStopStep_SVE.TabIndex = 3;
             // 
-            // textBoxStartStep
+            // textBoxStartStep_SVE
             // 
-            textBoxStartStep.Location = new Point(6, 46);
-            textBoxStartStep.Name = "textBoxStartStep";
-            textBoxStartStep.Size = new Size(157, 27);
-            textBoxStartStep.TabIndex = 2;
+            textBoxStartStep_SVE.Location = new Point(6, 46);
+            textBoxStartStep_SVE.Name = "textBoxStartStep_SVE";
+            textBoxStartStep_SVE.Size = new Size(157, 27);
+            textBoxStartStep_SVE.TabIndex = 2;
             // 
-            // labelStopStep
+            // labelStopStep_SVE
             // 
-            labelStopStep.AutoSize = true;
-            labelStopStep.Location = new Point(192, 23);
-            labelStopStep.Name = "labelStopStep";
-            labelStopStep.Size = new Size(94, 20);
-            labelStopStep.TabIndex = 1;
-            labelStopStep.Text = "Конец шага:";
+            labelStopStep_SVE.AutoSize = true;
+            labelStopStep_SVE.Location = new Point(192, 23);
+            labelStopStep_SVE.Name = "labelStopStep_SVE";
+            labelStopStep_SVE.Size = new Size(94, 20);
+            labelStopStep_SVE.TabIndex = 1;
+            labelStopStep_SVE.Text = "Конец шага:";
             // 
-            // labelStartStep
+            // labelStartStep_SVE
             // 
-            labelStartStep.AutoSize = true;
-            labelStartStep.Location = new Point(6, 23);
-            labelStartStep.Name = "labelStartStep";
-            labelStartStep.Size = new Size(88, 20);
-            labelStartStep.TabIndex = 0;
-            labelStartStep.Text = "Старт шага:";
+            labelStartStep_SVE.AutoSize = true;
+            labelStartStep_SVE.Location = new Point(6, 23);
+            labelStartStep_SVE.Name = "labelStartStep_SVE";
+            labelStartStep_SVE.Size = new Size(88, 20);
+            labelStartStep_SVE.TabIndex = 0;
+            labelStartStep_SVE.Text = "Старт шага:";
             // 
-            // buttonHelp
+            // buttonHelp_SVE
             // 
-            buttonHelp.BackColor = SystemColors.MenuHighlight;
-            buttonHelp.Location = new Point(380, 353);
-            buttonHelp.Name = "buttonHelp";
-            buttonHelp.Size = new Size(94, 71);
-            buttonHelp.TabIndex = 2;
-            buttonHelp.Text = "Справка";
-            buttonHelp.UseVisualStyleBackColor = false;
-            buttonHelp.Click += buttonHelp_Click;
+            buttonHelp_SVE.BackColor = SystemColors.MenuHighlight;
+            buttonHelp_SVE.Location = new Point(380, 353);
+            buttonHelp_SVE.Name = "buttonHelp_SVE";
+            buttonHelp_SVE.Size = new Size(94, 71);
+            buttonHelp_SVE.TabIndex = 2;
+            buttonHelp_SVE.Text = "Справка";
+            buttonHelp_SVE.UseVisualStyleBackColor = false;
+            buttonHelp_SVE.Click += buttonHelp_SVE_Click;
             // 
-            // buttonDone
+            // buttonDone_SVE
             // 
-            buttonDone.BackColor = Color.ForestGreen;
-            buttonDone.Location = new Point(480, 353);
-            buttonDone.Name = "buttonDone";
-            buttonDone.Size = new Size(132, 71);
-            buttonDone.TabIndex = 3;
-            buttonDone.Text = "Выполнить";
-            buttonDone.UseVisualStyleBackColor = false;
-            buttonDone.Click += buttonDone_Click;
-            buttonDone.MouseDown += buttonDone_MouseDown;
-            buttonDone.MouseEnter += buttonDone_MouseEnter;
-            buttonDone.MouseLeave += buttonDone_MouseLeave;
+            buttonDone_SVE.BackColor = Color.ForestGreen;
+            buttonDone_SVE.Location = new Point(480, 353);
+            buttonDone_SVE.Name = "buttonDone_SVE";
+            buttonDone_SVE.Size = new Size(132, 71);
+            buttonDone_SVE.TabIndex = 3;
+            buttonDone_SVE.Text = "Выполнить";
+            buttonDone_SVE.UseVisualStyleBackColor = false;
+            buttonDone_SVE.Click += buttonDone_SVE_Click;
+            buttonDone_SVE.MouseDown += buttonDone_SVE_MouseDown;
+            buttonDone_SVE.MouseEnter += buttonDone_SVE_MouseEnter;
+            buttonDone_SVE.MouseLeave += buttonDone_SVE_MouseLeave;
             // 
-            // groupBoxOutput
+            // groupBoxOutput_SVE
             // 
-            groupBoxOutput.Controls.Add(chartFunction);
-            groupBoxOutput.Controls.Add(dataGridViewFunction);
-            groupBoxOutput.Controls.Add(labelResult);
-            groupBoxOutput.Location = new Point(618, 12);
-            groupBoxOutput.Name = "groupBoxOutput";
-            groupBoxOutput.Size = new Size(659, 409);
-            groupBoxOutput.TabIndex = 4;
-            groupBoxOutput.TabStop = false;
-            groupBoxOutput.Text = "Вывод данных";
+            groupBoxOutput_SVE.Controls.Add(chartFunction_SVE);
+            groupBoxOutput_SVE.Controls.Add(dataGridViewFunction_SVE);
+            groupBoxOutput_SVE.Controls.Add(labelResult_SVE);
+            groupBoxOutput_SVE.Location = new Point(618, 12);
+            groupBoxOutput_SVE.Name = "groupBoxOutput_SVE";
+            groupBoxOutput_SVE.Size = new Size(659, 409);
+            groupBoxOutput_SVE.TabIndex = 4;
+            groupBoxOutput_SVE.TabStop = false;
+            groupBoxOutput_SVE.Text = "Вывод данных";
             // 
-            // chartFunction
+            // chartFunction_SVE
             // 
             chartArea1.Name = "ChartArea1";
-            chartFunction.ChartAreas.Add(chartArea1);
+            chartFunction_SVE.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            chartFunction.Legends.Add(legend1);
-            chartFunction.Location = new Point(199, 46);
-            chartFunction.Name = "chartFunction";
+            chartFunction_SVE.Legends.Add(legend1);
+            chartFunction_SVE.Location = new Point(199, 46);
+            chartFunction_SVE.Name = "chartFunction_SVE";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series1.IsVisibleInLegend = false;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
-            chartFunction.Series.Add(series1);
-            chartFunction.Size = new Size(454, 355);
-            chartFunction.TabIndex = 2;
-            chartFunction.Text = "chart1";
+            chartFunction_SVE.Series.Add(series1);
+            chartFunction_SVE.Size = new Size(454, 355);
+            chartFunction_SVE.TabIndex = 2;
+            chartFunction_SVE.Text = "chart1";
             // 
-            // dataGridViewFunction
+            // dataGridViewFunction_SVE
             // 
-            dataGridViewFunction.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewFunction.Columns.AddRange(new DataGridViewColumn[] { X, Y });
-            dataGridViewFunction.Location = new Point(6, 46);
-            dataGridViewFunction.Name = "dataGridViewFunction";
-            dataGridViewFunction.RowHeadersVisible = false;
-            dataGridViewFunction.RowHeadersWidth = 51;
-            dataGridViewFunction.Size = new Size(187, 357);
-            dataGridViewFunction.TabIndex = 1;
+            dataGridViewFunction_SVE.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewFunction_SVE.Columns.AddRange(new DataGridViewColumn[] { X, Y });
+            dataGridViewFunction_SVE.Location = new Point(6, 46);
+            dataGridViewFunction_SVE.Name = "dataGridViewFunction_SVE";
+            dataGridViewFunction_SVE.RowHeadersVisible = false;
+            dataGridViewFunction_SVE.RowHeadersWidth = 51;
+            dataGridViewFunction_SVE.Size = new Size(187, 357);
+            dataGridViewFunction_SVE.TabIndex = 1;
             // 
             // X
             // 
@@ -200,57 +200,58 @@
             Y.Name = "Y";
             Y.Width = 50;
             // 
-            // labelResult
+            // labelResult_SVE
             // 
-            labelResult.AutoSize = true;
-            labelResult.Location = new Point(6, 23);
-            labelResult.Name = "labelResult";
-            labelResult.Size = new Size(78, 20);
-            labelResult.TabIndex = 0;
-            labelResult.Text = "Результат:";
+            labelResult_SVE.AutoSize = true;
+            labelResult_SVE.Location = new Point(6, 23);
+            labelResult_SVE.Name = "labelResult_SVE";
+            labelResult_SVE.Size = new Size(78, 20);
+            labelResult_SVE.TabIndex = 0;
+            labelResult_SVE.Text = "Результат:";
             // 
-            // FormMain
+            // FormMain_SVE
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1289, 433);
-            Controls.Add(groupBoxOutput);
-            Controls.Add(buttonDone);
-            Controls.Add(buttonHelp);
-            Controls.Add(groupBoxInput);
-            Controls.Add(groupBoxTask);
+            Controls.Add(groupBoxOutput_SVE);
+            Controls.Add(buttonDone_SVE);
+            Controls.Add(buttonHelp_SVE);
+            Controls.Add(groupBoxInput_SVE);
+            Controls.Add(groupBoxTask_SVE);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
-            Name = "FormMain";
+            Name = "FormMain_SVE";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Спринт 6 | Таск 2 | Вариант 25 | Сафронов В.Е.";
-            groupBoxTask.ResumeLayout(false);
-            groupBoxTask.PerformLayout();
-            groupBoxInput.ResumeLayout(false);
-            groupBoxInput.PerformLayout();
-            groupBoxOutput.ResumeLayout(false);
-            groupBoxOutput.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)chartFunction).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewFunction).EndInit();
+            Text = "Спринт 6 | Таск 2 | Вариант 25 | Сафронов В. Е.";
+            Load += FormMain_SVE_Load;
+            groupBoxTask_SVE.ResumeLayout(false);
+            groupBoxTask_SVE.PerformLayout();
+            groupBoxInput_SVE.ResumeLayout(false);
+            groupBoxInput_SVE.PerformLayout();
+            groupBoxOutput_SVE.ResumeLayout(false);
+            groupBoxOutput_SVE.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)chartFunction_SVE).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewFunction_SVE).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private GroupBox groupBoxTask;
-        private TextBox textBoxTask;
-        private GroupBox groupBoxInput;
-        private Label labelStopStep;
-        private Label labelStartStep;
-        private TextBox textBoxStartStep;
-        private TextBox textBoxStopStep;
-        private Button buttonHelp;
-        private Button buttonDone;
-        private GroupBox groupBoxOutput;
-        private DataGridView dataGridViewFunction;
-        private Label labelResult;
+        private GroupBox groupBoxTask_SVE;
+        private TextBox textBoxTask_SVE;
+        private GroupBox groupBoxInput_SVE;
+        private Label labelStopStep_SVE;
+        private Label labelStartStep_SVE;
+        private TextBox textBoxStartStep_SVE;
+        private TextBox textBoxStopStep_SVE;
+        private Button buttonHelp_SVE;
+        private Button buttonDone_SVE;
+        private GroupBox groupBoxOutput_SVE;
+        private DataGridView dataGridViewFunction_SVE;
+        private Label labelResult_SVE;
         private DataGridViewTextBoxColumn X;
         private DataGridViewTextBoxColumn Y;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartFunction;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartFunction_SVE;
     }
 }
