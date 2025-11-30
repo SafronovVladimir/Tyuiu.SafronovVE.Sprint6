@@ -6,7 +6,6 @@ namespace Tyuiu.SafronovVE.Sprint6.Task2.V25.Lib
         public double[] GetMassFunction(int startValue, int stopValue)
         {
             int len = stopValue - startValue + 1;
-
             double[] mas = new double[len];
 
             int index = 0;

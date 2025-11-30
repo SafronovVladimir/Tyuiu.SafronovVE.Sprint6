@@ -7,7 +7,6 @@ namespace Tyuiu.SafronovVE.Sprint6.Task2.V25.Test
         [TestMethod]
         public void CheckGetMassFunction()
         {
-
             DataService ds = new DataService();
 
             int startValue = -5;
