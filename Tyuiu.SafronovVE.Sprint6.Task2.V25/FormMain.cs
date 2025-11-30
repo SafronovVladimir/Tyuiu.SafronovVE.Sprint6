@@ -34,6 +34,7 @@ namespace Tyuiu.SafronovVE.Sprint6.Task2.V25
                 int stopStep = Convert.ToInt32(textBoxStopStep.Text);
 
                 var mas = ds.GetMassFunction(startStep, stopStep);
+
                 int len = ds.GetMassFunction(startStep, stopStep).Length;
 
                 chartFunction.Titles.Add("График функции");
