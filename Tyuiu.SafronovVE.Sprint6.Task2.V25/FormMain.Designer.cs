@@ -181,6 +181,7 @@
             dataGridViewFunction_SVE.Columns.AddRange(new DataGridViewColumn[] { X, Y });
             dataGridViewFunction_SVE.Location = new Point(6, 46);
             dataGridViewFunction_SVE.Name = "dataGridViewFunction_SVE";
+            dataGridViewFunction_SVE.ReadOnly = true;
             dataGridViewFunction_SVE.RowHeadersVisible = false;
             dataGridViewFunction_SVE.RowHeadersWidth = 51;
             dataGridViewFunction_SVE.Size = new Size(187, 357);
@@ -191,6 +192,7 @@
             X.HeaderText = "X";
             X.MinimumWidth = 6;
             X.Name = "X";
+            X.ReadOnly = true;
             X.Width = 50;
             // 
             // Y
@@ -198,6 +200,7 @@
             Y.HeaderText = "F(X)";
             Y.MinimumWidth = 6;
             Y.Name = "Y";
+            Y.ReadOnly = true;
             Y.Width = 50;
             // 
             // labelResult_SVE
