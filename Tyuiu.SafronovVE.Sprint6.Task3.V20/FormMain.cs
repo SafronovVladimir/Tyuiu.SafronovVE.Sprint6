@@ -1,9 +1,9 @@
 using Tyuiu.SafronovVE.Sprint6.Task3.V20.Lib;
 namespace Tyuiu.SafronovVE.Sprint6.Task3.V20
 {
-    public partial class FormMain : Form
+    public partial class FormMain_SVE : Form
     {
-        public FormMain()
+        public FormMain_SVE()
         {
             InitializeComponent();
         }
@@ -18,55 +18,55 @@ namespace Tyuiu.SafronovVE.Sprint6.Task3.V20
             {2, -20, 12, -14, 4 }
         };
 
-        private void FormMain_Load(object sender, EventArgs e)
+        private void FormMain_SVE_Load(object sender, EventArgs e)
         {
-            groupBoxTask.Select();
+            groupBoxTask_SVE.Select();
 
             int rows = matrix.GetLength(0);
             int cols = matrix.GetLength(1);
 
-            dataGridViewMatrix.ColumnCount = cols;
-            dataGridViewMatrix.RowCount = rows;
+            dataGridViewMatrix_SVE.ColumnCount = cols;
+            dataGridViewMatrix_SVE.RowCount = rows;
 
             for (int i = 0; i < cols; i++)
             {
-                dataGridViewMatrix.Columns[i].Width = 50;
+                dataGridViewMatrix_SVE.Columns[i].Width = 50;
             }
 
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < cols; j++)
                 {
-                    dataGridViewMatrix.Rows[i].Cells[j].Value = Convert.ToString(matrix[i, j]);
+                    dataGridViewMatrix_SVE.Rows[i].Cells[j].Value = Convert.ToString(matrix[i, j]);
                 }
             }
         }
 
-        private void buttonDone_Click(object sender, EventArgs e)
+        private void buttonDone_SVE_Click(object sender, EventArgs e)
         {
             matrix = ds.Calculate(matrix);
 
             int rows = matrix.GetLength(0);
             int cols = matrix.GetLength(1);
 
-            dataGridViewResult.ColumnCount = cols;
-            dataGridViewResult.RowCount = rows;
+            dataGridViewResult_SVE.ColumnCount = cols;
+            dataGridViewResult_SVE.RowCount = rows;
 
             for (int i = 0; i < cols; i++)
             {
-                dataGridViewResult.Columns[i].Width = 50;
+                dataGridViewResult_SVE.Columns[i].Width = 50;
             }
 
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < cols; j++)
                 {
-                    dataGridViewResult.Rows[i].Cells[j].Value = Convert.ToString(matrix[i, j]);
+                    dataGridViewResult_SVE.Rows[i].Cells[j].Value = Convert.ToString(matrix[i, j]);
                 }
             }
         }
 
-        private void buttonHelp_Click(object sender, EventArgs e)
+        private void buttonHelp_SVE_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Таск 3 выполнил студент группы ИБКСб-25-1 Сафронов Владимир Евгеньевич", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }

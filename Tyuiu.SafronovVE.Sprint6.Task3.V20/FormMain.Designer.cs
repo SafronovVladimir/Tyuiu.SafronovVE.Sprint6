@@ -1,6 +1,6 @@
 ﻿namespace Tyuiu.SafronovVE.Sprint6.Task3.V20
 {
-    partial class FormMain
+    partial class FormMain_SVE
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,126 +28,126 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            groupBoxTask = new GroupBox();
-            dataGridViewMatrix = new DataGridView();
-            textBoxTask = new TextBox();
-            groupBoxOutput = new GroupBox();
-            dataGridViewResult = new DataGridView();
-            buttonHelp = new Button();
-            buttonDone = new Button();
-            groupBoxTask.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewMatrix).BeginInit();
-            groupBoxOutput.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewResult).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain_SVE));
+            groupBoxTask_SVE = new GroupBox();
+            dataGridViewMatrix_SVE = new DataGridView();
+            textBoxTask_SVE = new TextBox();
+            groupBoxOutput_SVE = new GroupBox();
+            dataGridViewResult_SVE = new DataGridView();
+            buttonHelp_SVE = new Button();
+            buttonDone_SVE = new Button();
+            groupBoxTask_SVE.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewMatrix_SVE).BeginInit();
+            groupBoxOutput_SVE.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewResult_SVE).BeginInit();
             SuspendLayout();
             // 
-            // groupBoxTask
+            // groupBoxTask_SVE
             // 
-            groupBoxTask.Controls.Add(dataGridViewMatrix);
-            groupBoxTask.Controls.Add(textBoxTask);
-            groupBoxTask.Location = new Point(12, 12);
-            groupBoxTask.Name = "groupBoxTask";
-            groupBoxTask.Size = new Size(525, 349);
-            groupBoxTask.TabIndex = 0;
-            groupBoxTask.TabStop = false;
-            groupBoxTask.Text = "Условие";
+            groupBoxTask_SVE.Controls.Add(dataGridViewMatrix_SVE);
+            groupBoxTask_SVE.Controls.Add(textBoxTask_SVE);
+            groupBoxTask_SVE.Location = new Point(12, 12);
+            groupBoxTask_SVE.Name = "groupBoxTask_SVE";
+            groupBoxTask_SVE.Size = new Size(525, 349);
+            groupBoxTask_SVE.TabIndex = 0;
+            groupBoxTask_SVE.TabStop = false;
+            groupBoxTask_SVE.Text = "Условие";
             // 
-            // dataGridViewMatrix
+            // dataGridViewMatrix_SVE
             // 
-            dataGridViewMatrix.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewMatrix.ColumnHeadersVisible = false;
-            dataGridViewMatrix.Location = new Point(238, 26);
-            dataGridViewMatrix.Name = "dataGridViewMatrix";
-            dataGridViewMatrix.ReadOnly = true;
-            dataGridViewMatrix.RowHeadersVisible = false;
-            dataGridViewMatrix.RowHeadersWidth = 51;
-            dataGridViewMatrix.Size = new Size(281, 303);
-            dataGridViewMatrix.TabIndex = 1;
+            dataGridViewMatrix_SVE.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewMatrix_SVE.ColumnHeadersVisible = false;
+            dataGridViewMatrix_SVE.Location = new Point(238, 26);
+            dataGridViewMatrix_SVE.Name = "dataGridViewMatrix_SVE";
+            dataGridViewMatrix_SVE.ReadOnly = true;
+            dataGridViewMatrix_SVE.RowHeadersVisible = false;
+            dataGridViewMatrix_SVE.RowHeadersWidth = 51;
+            dataGridViewMatrix_SVE.Size = new Size(281, 303);
+            dataGridViewMatrix_SVE.TabIndex = 1;
             // 
-            // textBoxTask
+            // textBoxTask_SVE
             // 
-            textBoxTask.BorderStyle = BorderStyle.None;
-            textBoxTask.Location = new Point(6, 26);
-            textBoxTask.Multiline = true;
-            textBoxTask.Name = "textBoxTask";
-            textBoxTask.ReadOnly = true;
-            textBoxTask.Size = new Size(235, 303);
-            textBoxTask.TabIndex = 0;
-            textBoxTask.Text = resources.GetString("textBoxTask.Text");
+            textBoxTask_SVE.BorderStyle = BorderStyle.None;
+            textBoxTask_SVE.Location = new Point(6, 26);
+            textBoxTask_SVE.Multiline = true;
+            textBoxTask_SVE.Name = "textBoxTask_SVE";
+            textBoxTask_SVE.ReadOnly = true;
+            textBoxTask_SVE.Size = new Size(226, 303);
+            textBoxTask_SVE.TabIndex = 0;
+            textBoxTask_SVE.Text = resources.GetString("textBoxTask_SVE.Text");
             // 
-            // groupBoxOutput
+            // groupBoxOutput_SVE
             // 
-            groupBoxOutput.Controls.Add(dataGridViewResult);
-            groupBoxOutput.Location = new Point(543, 12);
-            groupBoxOutput.Name = "groupBoxOutput";
-            groupBoxOutput.Size = new Size(293, 349);
-            groupBoxOutput.TabIndex = 1;
-            groupBoxOutput.TabStop = false;
-            groupBoxOutput.Text = "Вывод данных";
+            groupBoxOutput_SVE.Controls.Add(dataGridViewResult_SVE);
+            groupBoxOutput_SVE.Location = new Point(543, 12);
+            groupBoxOutput_SVE.Name = "groupBoxOutput_SVE";
+            groupBoxOutput_SVE.Size = new Size(293, 349);
+            groupBoxOutput_SVE.TabIndex = 1;
+            groupBoxOutput_SVE.TabStop = false;
+            groupBoxOutput_SVE.Text = "Вывод данных";
             // 
-            // dataGridViewResult
+            // dataGridViewResult_SVE
             // 
-            dataGridViewResult.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewResult.ColumnHeadersVisible = false;
-            dataGridViewResult.Location = new Point(6, 26);
-            dataGridViewResult.Name = "dataGridViewResult";
-            dataGridViewResult.ReadOnly = true;
-            dataGridViewResult.RowHeadersVisible = false;
-            dataGridViewResult.RowHeadersWidth = 51;
-            dataGridViewResult.Size = new Size(281, 303);
-            dataGridViewResult.TabIndex = 2;
+            dataGridViewResult_SVE.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewResult_SVE.ColumnHeadersVisible = false;
+            dataGridViewResult_SVE.Location = new Point(6, 26);
+            dataGridViewResult_SVE.Name = "dataGridViewResult_SVE";
+            dataGridViewResult_SVE.ReadOnly = true;
+            dataGridViewResult_SVE.RowHeadersVisible = false;
+            dataGridViewResult_SVE.RowHeadersWidth = 51;
+            dataGridViewResult_SVE.Size = new Size(281, 303);
+            dataGridViewResult_SVE.TabIndex = 2;
             // 
-            // buttonHelp
+            // buttonHelp_SVE
             // 
-            buttonHelp.Location = new Point(663, 367);
-            buttonHelp.Name = "buttonHelp";
-            buttonHelp.Size = new Size(42, 36);
-            buttonHelp.TabIndex = 2;
-            buttonHelp.Text = "?";
-            buttonHelp.UseVisualStyleBackColor = true;
-            buttonHelp.Click += buttonHelp_Click;
+            buttonHelp_SVE.Location = new Point(663, 367);
+            buttonHelp_SVE.Name = "buttonHelp_SVE";
+            buttonHelp_SVE.Size = new Size(42, 36);
+            buttonHelp_SVE.TabIndex = 2;
+            buttonHelp_SVE.Text = "?";
+            buttonHelp_SVE.UseVisualStyleBackColor = true;
+            buttonHelp_SVE.Click += buttonHelp_SVE_Click;
             // 
-            // buttonDone
+            // buttonDone_SVE
             // 
-            buttonDone.Location = new Point(711, 367);
-            buttonDone.Name = "buttonDone";
-            buttonDone.Size = new Size(125, 36);
-            buttonDone.TabIndex = 3;
-            buttonDone.Text = "Выполнить";
-            buttonDone.UseVisualStyleBackColor = true;
-            buttonDone.Click += buttonDone_Click;
+            buttonDone_SVE.Location = new Point(711, 367);
+            buttonDone_SVE.Name = "buttonDone_SVE";
+            buttonDone_SVE.Size = new Size(125, 36);
+            buttonDone_SVE.TabIndex = 3;
+            buttonDone_SVE.Text = "Выполнить";
+            buttonDone_SVE.UseVisualStyleBackColor = true;
+            buttonDone_SVE.Click += buttonDone_SVE_Click;
             // 
-            // FormMain
+            // FormMain_SVE
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(854, 414);
-            Controls.Add(buttonDone);
-            Controls.Add(buttonHelp);
-            Controls.Add(groupBoxOutput);
-            Controls.Add(groupBoxTask);
+            Controls.Add(buttonDone_SVE);
+            Controls.Add(buttonHelp_SVE);
+            Controls.Add(groupBoxOutput_SVE);
+            Controls.Add(groupBoxTask_SVE);
             MaximizeBox = false;
-            Name = "FormMain";
+            Name = "FormMain_SVE";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Спринт 6 | Таск 3 | Вариант 20 | Сафронов В. Е.";
-            Load += FormMain_Load;
-            groupBoxTask.ResumeLayout(false);
-            groupBoxTask.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewMatrix).EndInit();
-            groupBoxOutput.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridViewResult).EndInit();
+            Load += FormMain_SVE_Load;
+            groupBoxTask_SVE.ResumeLayout(false);
+            groupBoxTask_SVE.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewMatrix_SVE).EndInit();
+            groupBoxOutput_SVE.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewResult_SVE).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private GroupBox groupBoxTask;
-        private TextBox textBoxTask;
-        private DataGridView dataGridViewMatrix;
-        private GroupBox groupBoxOutput;
-        private Button buttonHelp;
-        private Button buttonDone;
-        private DataGridView dataGridViewResult;
+        private GroupBox groupBoxTask_SVE;
+        private TextBox textBoxTask_SVE;
+        private DataGridView dataGridViewMatrix_SVE;
+        private GroupBox groupBoxOutput_SVE;
+        private Button buttonHelp_SVE;
+        private Button buttonDone_SVE;
+        private DataGridView dataGridViewResult_SVE;
     }
 }
