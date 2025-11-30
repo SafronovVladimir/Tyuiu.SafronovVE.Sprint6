@@ -5,7 +5,7 @@ namespace Tyuiu.SafronovVE.Sprint6.Task2.V25.Test
     public sealed class DataServiceTest
     {
         [TestMethod]
-        public void CheckGetMass()
+        public void CheckGetMassFunction()
         {
             DataService ds = new DataService();
 
