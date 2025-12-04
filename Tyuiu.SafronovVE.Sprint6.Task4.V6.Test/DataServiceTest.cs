@@ -1,12 +1,11 @@
 ﻿using Tyuiu.SafronovVE.Sprint6.Task4.V6.Lib;
-
 namespace Tyuiu.SafronovVE.Sprint6.Task4.V6.Test
 {
     [TestClass]
     public sealed class DataServiceTest
     {
         [TestMethod]
-        public void ValidGetMass()
+        public void ValidGetMassFunction()
         {
             DataService ds = new DataService();
 
@@ -32,7 +31,6 @@ namespace Tyuiu.SafronovVE.Sprint6.Task4.V6.Test
             var resArray = ds.GetMassFunction(startValue, stopValue);
 
             CollectionAssert.AreEqual(resArray, waitArray);
-
         }
     }
 }
