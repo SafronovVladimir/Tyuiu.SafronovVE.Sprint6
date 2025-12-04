@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             panelTop = new Panel();
             buttonHelp = new Button();
             buttonSave = new Button();
@@ -83,6 +83,8 @@
             buttonHelp.Text = "Справка";
             buttonHelp.UseVisualStyleBackColor = false;
             buttonHelp.Click += buttonHelp_Click;
+            buttonHelp.MouseEnter += buttonDone_MouseEnter;
+            buttonHelp.MouseLeave += buttonDone_MouseLeave;
             // 
             // buttonSave
             // 
@@ -94,6 +96,8 @@
             buttonSave.Text = "Сохранить";
             buttonSave.UseVisualStyleBackColor = false;
             buttonSave.Click += buttonSave_Click;
+            buttonSave.MouseEnter += buttonDone_MouseEnter;
+            buttonSave.MouseLeave += buttonDone_MouseLeave;
             // 
             // buttonDone
             // 
@@ -105,6 +109,8 @@
             buttonDone.Text = "Выполнить";
             buttonDone.UseVisualStyleBackColor = false;
             buttonDone.Click += buttonDone_Click;
+            buttonDone.MouseEnter += buttonDone_MouseEnter;
+            buttonDone.MouseLeave += buttonDone_MouseLeave;
             // 
             // groupBoxInputData
             // 
@@ -213,27 +219,27 @@
             // 
             // chartFunction
             // 
-            chartArea2.Name = "ChartArea1";
-            chartFunction.ChartAreas.Add(chartArea2);
+            chartArea1.Name = "ChartArea1";
+            chartFunction.ChartAreas.Add(chartArea1);
             chartFunction.Dock = DockStyle.Fill;
-            legend2.Name = "Legend1";
-            chartFunction.Legends.Add(legend2);
+            legend1.Name = "Legend1";
+            chartFunction.Legends.Add(legend1);
             chartFunction.Location = new Point(0, 0);
             chartFunction.Name = "chartFunction";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.IsVisibleInLegend = false;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            chartFunction.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            chartFunction.Series.Add(series1);
             chartFunction.Size = new Size(889, 598);
             chartFunction.TabIndex = 1;
             chartFunction.Text = "График функции ";
-            title2.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            title2.ForeColor = Color.RoyalBlue;
-            title2.Name = "Title";
-            title2.Text = "График функции";
-            chartFunction.Titles.Add(title2);
+            title1.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            title1.ForeColor = Color.RoyalBlue;
+            title1.Name = "Title";
+            title1.Text = "График функции";
+            chartFunction.Titles.Add(title1);
             // 
             // splitterPanel
             // 

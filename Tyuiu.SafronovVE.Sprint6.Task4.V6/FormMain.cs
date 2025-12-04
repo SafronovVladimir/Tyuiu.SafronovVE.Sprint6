@@ -67,5 +67,15 @@ namespace Tyuiu.SafronovVE.Sprint6.Task4.V6
         {
             MessageBox.Show("Таск 4 выполнил студент группы ИБКСб-25-1 Сафронов Владимир Евгеньевич", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void buttonDone_MouseEnter(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Hand;
+        }
+
+        private void buttonDone_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Default;
+        }
     }
 }
