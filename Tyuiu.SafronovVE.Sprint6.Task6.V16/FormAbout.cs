@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Tyuiu.SafronovVE.Sprint6.Task6.V16
 {
-    public partial class FormAbout : Form
+    public partial class FormAbout_SVE : Form
     {
-        public FormAbout()
+        public FormAbout_SVE()
         {
             InitializeComponent();
         }
 
-        private void buttonOk_Click(object sender, EventArgs e)
+        private void buttonOK_SVE_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
     }
 }

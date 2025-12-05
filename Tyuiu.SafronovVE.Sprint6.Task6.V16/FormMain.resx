@@ -117,17 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>179, 18</value>
+  <metadata name="toolTip_SVE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>210, 17</value>
   </metadata>
-  <data name="textBoxCondition.Text" xml:space="preserve">
-    <value>Дан файл InPutFileTask6V16.txt который может находится в любом месте на диске. Загрузить файл в textBoxIn через openFileDialog. Найти в файле все вхождения символа "b". В строках, где есть указанный набор символов конкатенировать все строки через пробел в результирующую строку и вывесте ее в textBoxOut.
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="buttonDone_SVE.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        FO6CJmsI+QAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="openFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>295, 18</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>63</value>
+  <data name="textBoxTask_SVE.Text" xml:space="preserve">
+    <value>Дан файл InPutFileTask6V16.txt который может находится в любом месте на диске. Загрузить файл в textBoxIn через openFileDialog. Вывести слова в которых встречается b в результирующею строку и вывести ее в textBoxOut.
+</value>
+  </data>
+  <metadata name="openFileDialog_SVE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
 </root>

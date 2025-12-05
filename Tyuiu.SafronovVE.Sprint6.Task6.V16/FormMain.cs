@@ -1,9 +1,12 @@
 using Tyuiu.SafronovVE.Sprint6.Task6.V16.Lib;
+using System.Windows.Forms;
+using System.Linq.Expressions;
+
 namespace Tyuiu.SafronovVE.Sprint6.Task6.V16
 {
-    public partial class FormMain : Form
+    public partial class FormMain_SVE : Form
     {
-        public FormMain()
+        public FormMain_SVE()
         {
             InitializeComponent();
         }
@@ -11,25 +14,42 @@ namespace Tyuiu.SafronovVE.Sprint6.Task6.V16
         DataService ds = new DataService();
         string openFilePath;
 
-        private void buttonOpenFile_Click(object sender, EventArgs e)
+        private void buttonOpen_SVE_Click(object sender, EventArgs e)
         {
-            openFileDialog.ShowDialog();
-            openFilePath = openFileDialog.FileName;
-            textBoxInput.Text = File.ReadAllText(openFilePath);
-            inputLabel.Text = inputLabel.Text + " " + openFileDialog.FileName;
-            buttonDone.Enabled = true;
+            try
+            {
+                openFileDialog_SVE.ShowDialog();
+                openFilePath = openFileDialog_SVE.FileName;
+                textBoxInput_SVE.Text = File.ReadAllText(openFilePath);
+                groupBoxInput_SVE.Text = groupBoxInput_SVE.Text + " " + openFileDialog_SVE.FileName;
+                buttonDone_SVE.Enabled = true;
+            }
+            catch (FileNotFoundException)
+            {
+                MessageBox.Show("Файл не выбран или не существует!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
 
-        private void buttonDone_Click(object sender, EventArgs e)
+        private void buttonDone_SVE_Click(object sender, EventArgs e)
         {
-            textBoxOut.Text = ds.CollectTextFromFile(openFilePath);
+            textBoxOutput_SVE.Text = ds.CollectTextFromFile(openFilePath);
         }
 
-        private void buttonAbout_Click_1(object sender, EventArgs e)
+        private void buttonAbout_SVE_Click(object sender, EventArgs e)
         {
-            FormAbout formAbout = new FormAbout();
+            FormAbout_SVE formAbout = new FormAbout_SVE();
             formAbout.ShowDialog();
+        }
+
+        private void buttonOpen_SVE_MouseEnter(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Hand;
+        }
+
+        private void buttonOpen_SVE_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Default;
         }
     }
 }

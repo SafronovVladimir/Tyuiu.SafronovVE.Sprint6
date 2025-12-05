@@ -1,6 +1,6 @@
 ﻿namespace Tyuiu.SafronovVE.Sprint6.Task6.V16
 {
-    partial class FormMain
+    partial class FormMain_SVE
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,191 +29,235 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            panelTop = new Panel();
-            buttonAbout = new Button();
-            buttonDone = new Button();
-            buttonOpenFile = new Button();
-            panelCondition = new Panel();
-            textBoxCondition = new TextBox();
-            labelCondition = new Label();
-            textBoxInput = new TextBox();
-            textBoxOut = new TextBox();
-            toolTip1 = new ToolTip(components);
-            openFileDialog = new OpenFileDialog();
-            labelOutput = new Label();
-            inputLabel = new Label();
-            panelTop.SuspendLayout();
-            panelCondition.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain_SVE));
+            panelTop_SVE = new Panel();
+            buttonAbout_SVE = new Button();
+            buttonOpen_SVE = new Button();
+            buttonDone_SVE = new Button();
+            panelTask_SVE = new Panel();
+            groupBoxTask_SVE = new GroupBox();
+            textBoxTask_SVE = new TextBox();
+            panelLeft_SVE = new Panel();
+            groupBoxInput_SVE = new GroupBox();
+            textBoxInput_SVE = new TextBox();
+            splitterPanel_SVE = new Splitter();
+            panelRight_SVE = new Panel();
+            groupBoxOutput_SVE = new GroupBox();
+            textBoxOutput_SVE = new TextBox();
+            openFileDialog_SVE = new OpenFileDialog();
+            toolTip_SVE = new ToolTip(components);
+            panelTop_SVE.SuspendLayout();
+            panelTask_SVE.SuspendLayout();
+            groupBoxTask_SVE.SuspendLayout();
+            panelLeft_SVE.SuspendLayout();
+            groupBoxInput_SVE.SuspendLayout();
+            panelRight_SVE.SuspendLayout();
+            groupBoxOutput_SVE.SuspendLayout();
             SuspendLayout();
             // 
-            // panelTop
+            // panelTop_SVE
             // 
-            panelTop.BorderStyle = BorderStyle.FixedSingle;
-            panelTop.Controls.Add(buttonAbout);
-            panelTop.Controls.Add(buttonDone);
-            panelTop.Controls.Add(buttonOpenFile);
-            panelTop.Dock = DockStyle.Top;
-            panelTop.Location = new Point(0, 0);
-            panelTop.Name = "panelTop";
-            panelTop.Size = new Size(1048, 95);
-            panelTop.TabIndex = 0;
+            panelTop_SVE.BorderStyle = BorderStyle.FixedSingle;
+            panelTop_SVE.Controls.Add(buttonAbout_SVE);
+            panelTop_SVE.Controls.Add(buttonOpen_SVE);
+            panelTop_SVE.Controls.Add(buttonDone_SVE);
+            panelTop_SVE.Dock = DockStyle.Top;
+            panelTop_SVE.Location = new Point(0, 0);
+            panelTop_SVE.Name = "panelTop_SVE";
+            panelTop_SVE.Size = new Size(882, 88);
+            panelTop_SVE.TabIndex = 0;
             // 
-            // buttonAbout
+            // buttonAbout_SVE
             // 
-            buttonAbout.BackgroundImage = Properties.Resources.User;
-            buttonAbout.BackgroundImageLayout = ImageLayout.Zoom;
-            buttonAbout.Dock = DockStyle.Right;
-            buttonAbout.FlatStyle = FlatStyle.Flat;
-            buttonAbout.Location = new Point(940, 0);
-            buttonAbout.Name = "buttonAbout";
-            buttonAbout.Size = new Size(106, 93);
-            buttonAbout.TabIndex = 2;
-            buttonAbout.UseVisualStyleBackColor = true;
-            buttonAbout.Click += buttonAbout_Click_1;
+            buttonAbout_SVE.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            buttonAbout_SVE.BackColor = SystemColors.ButtonFace;
+            buttonAbout_SVE.Image = Properties.Resources.icons8_работа_48;
+            buttonAbout_SVE.Location = new Point(766, 3);
+            buttonAbout_SVE.Name = "buttonAbout_SVE";
+            buttonAbout_SVE.Size = new Size(111, 80);
+            buttonAbout_SVE.TabIndex = 0;
+            toolTip_SVE.SetToolTip(buttonAbout_SVE, "О программе");
+            buttonAbout_SVE.UseVisualStyleBackColor = false;
+            buttonAbout_SVE.Click += buttonAbout_SVE_Click;
+            buttonAbout_SVE.MouseEnter += buttonOpen_SVE_MouseEnter;
+            buttonAbout_SVE.MouseLeave += buttonOpen_SVE_MouseLeave;
             // 
-            // buttonDone
+            // buttonOpen_SVE
             // 
-            buttonDone.BackgroundImage = Properties.Resources.Link;
-            buttonDone.BackgroundImageLayout = ImageLayout.Zoom;
-            buttonDone.Dock = DockStyle.Left;
-            buttonDone.Enabled = false;
-            buttonDone.FlatStyle = FlatStyle.Flat;
-            buttonDone.Location = new Point(106, 0);
-            buttonDone.Name = "buttonDone";
-            buttonDone.Size = new Size(106, 93);
-            buttonDone.TabIndex = 1;
-            toolTip1.SetToolTip(buttonDone, "Производит поиск в файле вхождений символов \"b\"\r\nи конкатенирует строки в которых находятся\r\nэти символов");
-            buttonDone.UseVisualStyleBackColor = true;
-            buttonDone.Click += buttonDone_Click;
+            buttonOpen_SVE.BackColor = SystemColors.ButtonFace;
+            buttonOpen_SVE.Image = Properties.Resources.icons8_добавить_папку_48;
+            buttonOpen_SVE.Location = new Point(3, 3);
+            buttonOpen_SVE.Name = "buttonOpen_SVE";
+            buttonOpen_SVE.Size = new Size(111, 80);
+            buttonOpen_SVE.TabIndex = 0;
+            toolTip_SVE.SetToolTip(buttonOpen_SVE, "Открыть файл\r\nВыберите нужный файл для обработки");
+            buttonOpen_SVE.UseVisualStyleBackColor = false;
+            buttonOpen_SVE.Click += buttonOpen_SVE_Click;
+            buttonOpen_SVE.MouseEnter += buttonOpen_SVE_MouseEnter;
+            buttonOpen_SVE.MouseLeave += buttonOpen_SVE_MouseLeave;
             // 
-            // buttonOpenFile
+            // buttonDone_SVE
             // 
-            buttonOpenFile.BackgroundImage = Properties.Resources.Folder;
-            buttonOpenFile.BackgroundImageLayout = ImageLayout.Zoom;
-            buttonOpenFile.Dock = DockStyle.Left;
-            buttonOpenFile.FlatStyle = FlatStyle.Flat;
-            buttonOpenFile.Location = new Point(0, 0);
-            buttonOpenFile.Name = "buttonOpenFile";
-            buttonOpenFile.Size = new Size(106, 93);
-            buttonOpenFile.TabIndex = 0;
-            toolTip1.SetToolTip(buttonOpenFile, "Открыть файл\r\nВыберите нужный файл для обработки");
-            buttonOpenFile.UseVisualStyleBackColor = true;
-            buttonOpenFile.Click += buttonOpenFile_Click;
+            buttonDone_SVE.BackColor = SystemColors.ButtonFace;
+            buttonDone_SVE.Enabled = false;
+            buttonDone_SVE.Image = (Image)resources.GetObject("buttonDone_SVE.Image");
+            buttonDone_SVE.Location = new Point(120, 3);
+            buttonDone_SVE.Name = "buttonDone_SVE";
+            buttonDone_SVE.Size = new Size(111, 80);
+            buttonDone_SVE.TabIndex = 0;
+            toolTip_SVE.SetToolTip(buttonDone_SVE, "Производит поиск в файле вхождений символов \"b\"\r\nи выводит результат в поле \"Вывод\"");
+            buttonDone_SVE.UseVisualStyleBackColor = false;
+            buttonDone_SVE.Click += buttonDone_SVE_Click;
+            buttonDone_SVE.MouseEnter += buttonOpen_SVE_MouseEnter;
+            buttonDone_SVE.MouseLeave += buttonOpen_SVE_MouseLeave;
             // 
-            // panelCondition
+            // panelTask_SVE
             // 
-            panelCondition.Controls.Add(textBoxCondition);
-            panelCondition.Controls.Add(labelCondition);
-            panelCondition.Dock = DockStyle.Top;
-            panelCondition.Location = new Point(0, 95);
-            panelCondition.Name = "panelCondition";
-            panelCondition.Size = new Size(1048, 125);
-            panelCondition.TabIndex = 2;
+            panelTask_SVE.Controls.Add(groupBoxTask_SVE);
+            panelTask_SVE.Dock = DockStyle.Top;
+            panelTask_SVE.Location = new Point(0, 88);
+            panelTask_SVE.Name = "panelTask_SVE";
+            panelTask_SVE.Size = new Size(882, 100);
+            panelTask_SVE.TabIndex = 1;
             // 
-            // textBoxCondition
+            // groupBoxTask_SVE
             // 
-            textBoxCondition.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBoxCondition.BackColor = SystemColors.Control;
-            textBoxCondition.BorderStyle = BorderStyle.None;
-            textBoxCondition.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxCondition.Location = new Point(12, 26);
-            textBoxCondition.Multiline = true;
-            textBoxCondition.Name = "textBoxCondition";
-            textBoxCondition.Size = new Size(1024, 96);
-            textBoxCondition.TabIndex = 1;
-            textBoxCondition.Text = resources.GetString("textBoxCondition.Text");
+            groupBoxTask_SVE.Controls.Add(textBoxTask_SVE);
+            groupBoxTask_SVE.Dock = DockStyle.Fill;
+            groupBoxTask_SVE.Location = new Point(0, 0);
+            groupBoxTask_SVE.Name = "groupBoxTask_SVE";
+            groupBoxTask_SVE.Size = new Size(882, 100);
+            groupBoxTask_SVE.TabIndex = 0;
+            groupBoxTask_SVE.TabStop = false;
+            groupBoxTask_SVE.Text = "Условие:";
             // 
-            // labelCondition
+            // textBoxTask_SVE
             // 
-            labelCondition.AutoSize = true;
-            labelCondition.Location = new Point(12, 3);
-            labelCondition.Name = "labelCondition";
-            labelCondition.Size = new Size(70, 20);
-            labelCondition.TabIndex = 0;
-            labelCondition.Text = "Условие:";
+            textBoxTask_SVE.BorderStyle = BorderStyle.None;
+            textBoxTask_SVE.Dock = DockStyle.Fill;
+            textBoxTask_SVE.Location = new Point(3, 23);
+            textBoxTask_SVE.Multiline = true;
+            textBoxTask_SVE.Name = "textBoxTask_SVE";
+            textBoxTask_SVE.ReadOnly = true;
+            textBoxTask_SVE.Size = new Size(876, 74);
+            textBoxTask_SVE.TabIndex = 0;
+            textBoxTask_SVE.Text = resources.GetString("textBoxTask_SVE.Text");
             // 
-            // textBoxInput
+            // panelLeft_SVE
             // 
-            textBoxInput.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textBoxInput.BackColor = SystemColors.Window;
-            textBoxInput.BorderStyle = BorderStyle.None;
-            textBoxInput.Location = new Point(12, 246);
-            textBoxInput.Multiline = true;
-            textBoxInput.Name = "textBoxInput";
-            textBoxInput.ScrollBars = ScrollBars.Vertical;
-            textBoxInput.Size = new Size(489, 336);
-            textBoxInput.TabIndex = 6;
+            panelLeft_SVE.Controls.Add(groupBoxInput_SVE);
+            panelLeft_SVE.Dock = DockStyle.Left;
+            panelLeft_SVE.Location = new Point(0, 188);
+            panelLeft_SVE.Name = "panelLeft_SVE";
+            panelLeft_SVE.Size = new Size(443, 365);
+            panelLeft_SVE.TabIndex = 2;
             // 
-            // textBoxOut
+            // groupBoxInput_SVE
             // 
-            textBoxOut.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBoxOut.BackColor = SystemColors.Window;
-            textBoxOut.BorderStyle = BorderStyle.None;
-            textBoxOut.Location = new Point(547, 246);
-            textBoxOut.Multiline = true;
-            textBoxOut.Name = "textBoxOut";
-            textBoxOut.ScrollBars = ScrollBars.Vertical;
-            textBoxOut.Size = new Size(489, 336);
-            textBoxOut.TabIndex = 7;
+            groupBoxInput_SVE.Controls.Add(textBoxInput_SVE);
+            groupBoxInput_SVE.Dock = DockStyle.Fill;
+            groupBoxInput_SVE.Location = new Point(0, 0);
+            groupBoxInput_SVE.Name = "groupBoxInput_SVE";
+            groupBoxInput_SVE.Size = new Size(443, 365);
+            groupBoxInput_SVE.TabIndex = 0;
+            groupBoxInput_SVE.TabStop = false;
+            groupBoxInput_SVE.Text = "Ввод:";
             // 
-            // openFileDialog
+            // textBoxInput_SVE
             // 
-            openFileDialog.FileName = "openFileDialog2";
+            textBoxInput_SVE.Dock = DockStyle.Fill;
+            textBoxInput_SVE.Location = new Point(3, 23);
+            textBoxInput_SVE.Multiline = true;
+            textBoxInput_SVE.Name = "textBoxInput_SVE";
+            textBoxInput_SVE.ScrollBars = ScrollBars.Vertical;
+            textBoxInput_SVE.Size = new Size(437, 339);
+            textBoxInput_SVE.TabIndex = 0;
             // 
-            // labelOutput
+            // splitterPanel_SVE
             // 
-            labelOutput.AutoSize = true;
-            labelOutput.Location = new Point(547, 223);
-            labelOutput.Name = "labelOutput";
-            labelOutput.Size = new Size(57, 20);
-            labelOutput.TabIndex = 4;
-            labelOutput.Text = "Вывод:";
+            splitterPanel_SVE.Location = new Point(443, 188);
+            splitterPanel_SVE.Name = "splitterPanel_SVE";
+            splitterPanel_SVE.Size = new Size(4, 365);
+            splitterPanel_SVE.TabIndex = 3;
+            splitterPanel_SVE.TabStop = false;
             // 
-            // inputLabel
+            // panelRight_SVE
             // 
-            inputLabel.AutoSize = true;
-            inputLabel.Location = new Point(12, 223);
-            inputLabel.Name = "inputLabel";
-            inputLabel.Size = new Size(46, 20);
-            inputLabel.TabIndex = 3;
-            inputLabel.Text = "Ввод:";
+            panelRight_SVE.Controls.Add(groupBoxOutput_SVE);
+            panelRight_SVE.Dock = DockStyle.Fill;
+            panelRight_SVE.Location = new Point(447, 188);
+            panelRight_SVE.Name = "panelRight_SVE";
+            panelRight_SVE.Size = new Size(435, 365);
+            panelRight_SVE.TabIndex = 4;
             // 
-            // FormMain
+            // groupBoxOutput_SVE
+            // 
+            groupBoxOutput_SVE.Controls.Add(textBoxOutput_SVE);
+            groupBoxOutput_SVE.Dock = DockStyle.Fill;
+            groupBoxOutput_SVE.Location = new Point(0, 0);
+            groupBoxOutput_SVE.Name = "groupBoxOutput_SVE";
+            groupBoxOutput_SVE.Size = new Size(435, 365);
+            groupBoxOutput_SVE.TabIndex = 0;
+            groupBoxOutput_SVE.TabStop = false;
+            groupBoxOutput_SVE.Text = "Вывод:";
+            // 
+            // textBoxOutput_SVE
+            // 
+            textBoxOutput_SVE.Dock = DockStyle.Fill;
+            textBoxOutput_SVE.Location = new Point(3, 23);
+            textBoxOutput_SVE.Multiline = true;
+            textBoxOutput_SVE.Name = "textBoxOutput_SVE";
+            textBoxOutput_SVE.ScrollBars = ScrollBars.Vertical;
+            textBoxOutput_SVE.Size = new Size(429, 339);
+            textBoxOutput_SVE.TabIndex = 0;
+            // 
+            // openFileDialog_SVE
+            // 
+            openFileDialog_SVE.FileName = "openFileDialog1";
+            // 
+            // FormMain_SVE
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1048, 594);
-            Controls.Add(textBoxOut);
-            Controls.Add(textBoxInput);
-            Controls.Add(labelOutput);
-            Controls.Add(inputLabel);
-            Controls.Add(panelCondition);
-            Controls.Add(panelTop);
-            Name = "FormMain";
-            Text = "Sprint 6 | Task 6 | V16 | Safronov V. E.";
-            panelTop.ResumeLayout(false);
-            panelCondition.ResumeLayout(false);
-            panelCondition.PerformLayout();
+            ClientSize = new Size(882, 553);
+            Controls.Add(panelRight_SVE);
+            Controls.Add(splitterPanel_SVE);
+            Controls.Add(panelLeft_SVE);
+            Controls.Add(panelTask_SVE);
+            Controls.Add(panelTop_SVE);
+            Name = "FormMain_SVE";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Спринт 6 | Таск 6 | Вариант 16 | Сафронов В. Е.";
+            panelTop_SVE.ResumeLayout(false);
+            panelTask_SVE.ResumeLayout(false);
+            groupBoxTask_SVE.ResumeLayout(false);
+            groupBoxTask_SVE.PerformLayout();
+            panelLeft_SVE.ResumeLayout(false);
+            groupBoxInput_SVE.ResumeLayout(false);
+            groupBoxInput_SVE.PerformLayout();
+            panelRight_SVE.ResumeLayout(false);
+            groupBoxOutput_SVE.ResumeLayout(false);
+            groupBoxOutput_SVE.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Panel panelTop;
-        private Button buttonAbout;
-        private Button buttonDone;
-        private Button buttonOpenFile;
-        private Panel panelCondition;
-        private Label labelCondition;
-        private TextBox textBoxCondition;
-        private TextBox textBoxInput;
-        private TextBox textBoxOut;
-        private OpenFileDialog openFileDialog1;
-        private ToolTip toolTip1;
-        private OpenFileDialog openFileDialog;
-        private Label labelOutput;
-        private Label inputLabel;
+        private Panel panelTop_SVE;
+        private Button buttonAbout_SVE;
+        private Button buttonOpen_SVE;
+        private Button buttonDone_SVE;
+        private Panel panelTask_SVE;
+        private Panel panelLeft_SVE;
+        private Splitter splitterPanel_SVE;
+        private Panel panelRight_SVE;
+        private GroupBox groupBoxTask_SVE;
+        private TextBox textBoxTask_SVE;
+        private GroupBox groupBoxInput_SVE;
+        private TextBox textBoxInput_SVE;
+        private GroupBox groupBoxOutput_SVE;
+        private TextBox textBoxOutput_SVE;
+        private OpenFileDialog openFileDialog_SVE;
+        private ToolTip toolTip_SVE;
     }
 }

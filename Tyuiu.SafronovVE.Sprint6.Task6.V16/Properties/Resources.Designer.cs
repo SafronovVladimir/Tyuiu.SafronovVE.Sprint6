@@ -63,9 +63,9 @@ namespace Tyuiu.SafronovVE.Sprint6.Task6.V16.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Folder {
+        internal static System.Drawing.Bitmap icons8_добавить_папку_48 {
             get {
-                object obj = ResourceManager.GetObject("Folder", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-добавить-папку-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,69 +73,9 @@ namespace Tyuiu.SafronovVE.Sprint6.Task6.V16.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Folder_3D {
+        internal static System.Drawing.Bitmap icons8_работа_48 {
             get {
-                object obj = ResourceManager.GetObject("Folder 3D", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Folder_3D1 {
-            get {
-                object obj = ResourceManager.GetObject("Folder 3D1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Folder_Blue {
-            get {
-                object obj = ResourceManager.GetObject("Folder Blue", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Folder_Desktop {
-            get {
-                object obj = ResourceManager.GetObject("Folder Desktop", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Folder_Documents {
-            get {
-                object obj = ResourceManager.GetObject("Folder Documents", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_папка_48 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-папка-48", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Link {
-            get {
-                object obj = ResourceManager.GetObject("Link", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-работа-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,16 +86,6 @@ namespace Tyuiu.SafronovVE.Sprint6.Task6.V16.Properties {
         internal static System.Drawing.Bitmap photo_2025_10_11_16_41_40 {
             get {
                 object obj = ResourceManager.GetObject("photo_2025-10-11_16-41-40", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap User {
-            get {
-                object obj = ResourceManager.GetObject("User", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
