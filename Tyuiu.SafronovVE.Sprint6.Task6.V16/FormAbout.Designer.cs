@@ -51,7 +51,7 @@
             labelInfo_SVE.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
             labelInfo_SVE.Location = new Point(194, 12);
             labelInfo_SVE.Name = "labelInfo_SVE";
-            labelInfo_SVE.Size = new Size(387, 180);
+            labelInfo_SVE.Size = new Size(387, 200);
             labelInfo_SVE.TabIndex = 1;
             labelInfo_SVE.Text = resources.GetString("labelInfo_SVE.Text");
             // 
