@@ -48,7 +48,7 @@
             groupBoxTask_SVE.Controls.Add(textBoxTask_SVE);
             groupBoxTask_SVE.Location = new Point(12, 12);
             groupBoxTask_SVE.Name = "groupBoxTask_SVE";
-            groupBoxTask_SVE.Size = new Size(525, 349);
+            groupBoxTask_SVE.Size = new Size(540, 349);
             groupBoxTask_SVE.TabIndex = 0;
             groupBoxTask_SVE.TabStop = false;
             groupBoxTask_SVE.Text = "Условие";
@@ -62,7 +62,7 @@
             dataGridViewMatrix_SVE.ReadOnly = true;
             dataGridViewMatrix_SVE.RowHeadersVisible = false;
             dataGridViewMatrix_SVE.RowHeadersWidth = 51;
-            dataGridViewMatrix_SVE.Size = new Size(281, 303);
+            dataGridViewMatrix_SVE.Size = new Size(296, 303);
             dataGridViewMatrix_SVE.TabIndex = 1;
             // 
             // textBoxTask_SVE
@@ -79,9 +79,9 @@
             // groupBoxOutput_SVE
             // 
             groupBoxOutput_SVE.Controls.Add(dataGridViewResult_SVE);
-            groupBoxOutput_SVE.Location = new Point(543, 12);
+            groupBoxOutput_SVE.Location = new Point(558, 12);
             groupBoxOutput_SVE.Name = "groupBoxOutput_SVE";
-            groupBoxOutput_SVE.Size = new Size(293, 349);
+            groupBoxOutput_SVE.Size = new Size(308, 349);
             groupBoxOutput_SVE.TabIndex = 1;
             groupBoxOutput_SVE.TabStop = false;
             groupBoxOutput_SVE.Text = "Вывод данных";
@@ -95,12 +95,12 @@
             dataGridViewResult_SVE.ReadOnly = true;
             dataGridViewResult_SVE.RowHeadersVisible = false;
             dataGridViewResult_SVE.RowHeadersWidth = 51;
-            dataGridViewResult_SVE.Size = new Size(281, 303);
+            dataGridViewResult_SVE.Size = new Size(296, 303);
             dataGridViewResult_SVE.TabIndex = 2;
             // 
             // buttonHelp_SVE
             // 
-            buttonHelp_SVE.Location = new Point(663, 367);
+            buttonHelp_SVE.Location = new Point(678, 367);
             buttonHelp_SVE.Name = "buttonHelp_SVE";
             buttonHelp_SVE.Size = new Size(42, 36);
             buttonHelp_SVE.TabIndex = 2;
@@ -110,7 +110,7 @@
             // 
             // buttonDone_SVE
             // 
-            buttonDone_SVE.Location = new Point(711, 367);
+            buttonDone_SVE.Location = new Point(726, 367);
             buttonDone_SVE.Name = "buttonDone_SVE";
             buttonDone_SVE.Size = new Size(125, 36);
             buttonDone_SVE.TabIndex = 3;
@@ -122,11 +122,12 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(854, 414);
+            ClientSize = new Size(876, 414);
             Controls.Add(buttonDone_SVE);
             Controls.Add(buttonHelp_SVE);
             Controls.Add(groupBoxOutput_SVE);
             Controls.Add(groupBoxTask_SVE);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "FormMain_SVE";
             StartPosition = FormStartPosition.CenterScreen;
