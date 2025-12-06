@@ -38,7 +38,9 @@ namespace Tyuiu.SafronovVE.Sprint6.Task7.V28.Test
             waitMatrix[6, 7] = 0;
             waitMatrix[6, 8] = 0;
             waitMatrix[6, 9] = 0;
+
             var resMatrix = ds.GetMatrix(path);
+
             CollectionAssert.AreEqual(resMatrix, waitMatrix);
         }
 

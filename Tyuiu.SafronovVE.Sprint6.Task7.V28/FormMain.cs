@@ -1,13 +1,15 @@
-using System.Diagnostics.Eventing.Reader;
-using System.IO;
+using System.Windows.Forms;
 using Tyuiu.SafronovVE.Sprint6.Task7.V28.Lib;
 namespace Tyuiu.SafronovVE.Sprint6.Task7.V28
 {
-    public partial class FormMain : Form
+    public partial class FormMain_SVE : Form
     {
-        public FormMain()
+        public FormMain_SVE()
         {
             InitializeComponent();
+
+            openFileDialog_SVE.Filter = "Значения, разделённые запятыми(*.csv)|*.csv|Все файлы(*.*)|*.*";
+            saveFileDialog_SVE.Filter = "Значения, разделённые запятыми(*.csv)|*.csv|Все файлы(*.*)|*.*";
         }
 
         static string openFilePath;
@@ -36,39 +38,39 @@ namespace Tyuiu.SafronovVE.Sprint6.Task7.V28
             return result;
         }
 
-private void buttonOpenFile_Click(object sender, EventArgs e)
+        private void buttonOpen_SVE_Click(object sender, EventArgs e)
         {
-            openFileDialog.ShowDialog();
-            openFilePath = openFileDialog.FileName;
+            openFileDialog_SVE.ShowDialog();
+            openFilePath = openFileDialog_SVE.FileName;
 
             var matrix = GetMass(openFilePath);
 
             rows = matrix.GetUpperBound(0) + 1;
             cols = matrix.GetUpperBound(1) + 1;
 
-            dataGridViewIn.ColumnCount = cols;
-            dataGridViewIn.RowCount = rows;
-            dataGridViewOut.ColumnCount = cols;
-            dataGridViewOut.RowCount = rows;
+            dataGridViewIn_SVE.ColumnCount = cols;
+            dataGridViewIn_SVE.RowCount = rows;
+            dataGridViewOut_SVE.ColumnCount = cols;
+            dataGridViewOut_SVE.RowCount = rows;
 
             for (int i = 0; i < cols; i++)
             {
-                dataGridViewIn.Columns[i].Width = 50;
-                dataGridViewOut.Columns[i].Width = 50;
+                dataGridViewIn_SVE.Columns[i].Width = 50;
+                dataGridViewOut_SVE.Columns[i].Width = 50;
             }
 
             for (int r = 0; r < rows; r++)
             {
                 for (int c = 0; c < cols; c++)
                 {
-                    dataGridViewIn.Rows[r].Cells[c].Value = matrix[r, c];
+                    dataGridViewIn_SVE.Rows[r].Cells[c].Value = matrix[r, c];
                 }
             }
 
-            buttonDone.Enabled = true;
+            buttonDone_SVE.Enabled = true;
         }
 
-        private void buttonDone_Click(object sender, EventArgs e)
+        private void buttonDone_SVE_Click(object sender, EventArgs e)
         {
             var valueArray = ds.GetMatrix(openFilePath);
 
@@ -76,18 +78,18 @@ private void buttonOpenFile_Click(object sender, EventArgs e)
             {
                 for (int c = 0; c < cols; c++)
                 {
-                    dataGridViewOut.Rows[r].Cells[c].Value = valueArray[r, c];
+                    dataGridViewOut_SVE.Rows[r].Cells[c].Value = valueArray[r, c];
                 }
             }
         }
 
-        private void buttonSaveFile_Click(object sender, EventArgs e)
+        private void buttonSave_SVE_Click(object sender, EventArgs e)
         {
-            saveFileDialog.FileName = "OutfFileTask7.csv";
-            saveFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
-            saveFileDialog.ShowDialog();
+            saveFileDialog_SVE.FileName = "OutfFileTask7.csv";
+            saveFileDialog_SVE.InitialDirectory = Directory.GetCurrentDirectory();
+            saveFileDialog_SVE.ShowDialog();
 
-            string path = saveFileDialog.FileName;
+            string path = saveFileDialog_SVE.FileName;
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExist = fileInfo.Exists;
@@ -97,8 +99,8 @@ private void buttonOpenFile_Click(object sender, EventArgs e)
                 File.Delete(path);
             }
 
-            int rows = dataGridViewOut.RowCount;
-            int cols = dataGridViewOut.ColumnCount;
+            int rows = dataGridViewOut_SVE.RowCount;
+            int cols = dataGridViewOut_SVE.ColumnCount;
 
             string str = "";
 
@@ -108,11 +110,11 @@ private void buttonOpenFile_Click(object sender, EventArgs e)
                 {
                     if (j != cols - 1)
                     {
-                        str += dataGridViewOut.Rows[i].Cells[j].Value + ";";
+                        str += dataGridViewOut_SVE.Rows[i].Cells[j].Value + ";";
                     }
                     else
                     {
-                        str += dataGridViewOut.Rows[i].Cells[j].Value;
+                        str += dataGridViewOut_SVE.Rows[i].Cells[j].Value;
                     }
                 }
                 File.AppendAllText(path, str + Environment.NewLine);
@@ -120,10 +122,38 @@ private void buttonOpenFile_Click(object sender, EventArgs e)
             }
         }
 
-        private void buttonAbout_Click(object sender, EventArgs e)
+        private void buttonHelp_SVE_Click(object sender, EventArgs e)
         {
-            FormAbout formAbout = new FormAbout();
+            FormAbout_SVE formAbout = new FormAbout_SVE();
             formAbout.ShowDialog();
+        }
+
+        private void FormMain_SVE_Load(object sender, EventArgs e)
+        {
+            dataGridViewIn_SVE.ColumnCount = 50;
+            dataGridViewOut_SVE.ColumnCount = 50;
+
+            dataGridViewIn_SVE.RowCount = 50;
+            dataGridViewOut_SVE.RowCount = 50;
+
+            for (int i = 0; i < 50; i++)
+            {
+                dataGridViewIn_SVE.Columns[i].Width = 25;
+                dataGridViewOut_SVE.Columns[i].Width = 25;
+            }
+
+            panelLeft_SVE.Width = this.Width / 2;
+            panelRight_SVE.Width = this.Width / 2;
+        }
+
+        private void buttonOpen_SVE_MouseEnter(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Hand;
+        }
+
+        private void buttonOpen_SVE_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Default;
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Tyuiu.SafronovVE.Sprint6.Task7.V28
 {
-    partial class FormMain
+    partial class FormMain_SVE
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,238 +29,263 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            panelTop = new Panel();
-            buttonAbout = new Button();
-            buttonSaveFile = new Button();
-            buttonDone = new Button();
-            buttonOpenFile = new Button();
-            panelCondition = new Panel();
-            groupBoxCondition = new GroupBox();
-            splitContainerMain = new SplitContainer();
-            groupBoxInput = new GroupBox();
-            dataGridViewIn = new DataGridView();
-            groupBoxOut = new GroupBox();
-            dataGridViewOut = new DataGridView();
-            openFileDialog = new OpenFileDialog();
-            toolTip = new ToolTip(components);
-            saveFileDialog = new SaveFileDialog();
-            label1 = new Label();
-            panelTop.SuspendLayout();
-            panelCondition.SuspendLayout();
-            groupBoxCondition.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)splitContainerMain).BeginInit();
-            splitContainerMain.Panel1.SuspendLayout();
-            splitContainerMain.Panel2.SuspendLayout();
-            splitContainerMain.SuspendLayout();
-            groupBoxInput.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewIn).BeginInit();
-            groupBoxOut.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewOut).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain_SVE));
+            panelTop_SVE = new Panel();
+            buttonHelp_SVE = new Button();
+            buttonSave_SVE = new Button();
+            buttonDone_SVE = new Button();
+            buttonOpen_SVE = new Button();
+            panelTask_SVE = new Panel();
+            groupBoxTask_SVE = new GroupBox();
+            textBoxTask_SVE = new TextBox();
+            panelLeft_SVE = new Panel();
+            groupBoxInput_SVE = new GroupBox();
+            dataGridViewIn_SVE = new DataGridView();
+            splitterPanel_SVE = new Splitter();
+            panelRight_SVE = new Panel();
+            groupBoxOutput_SVE = new GroupBox();
+            dataGridViewOut_SVE = new DataGridView();
+            toolTip_SVE = new ToolTip(components);
+            openFileDialog_SVE = new OpenFileDialog();
+            saveFileDialog_SVE = new SaveFileDialog();
+            panelTop_SVE.SuspendLayout();
+            panelTask_SVE.SuspendLayout();
+            groupBoxTask_SVE.SuspendLayout();
+            panelLeft_SVE.SuspendLayout();
+            groupBoxInput_SVE.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewIn_SVE).BeginInit();
+            panelRight_SVE.SuspendLayout();
+            groupBoxOutput_SVE.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewOut_SVE).BeginInit();
             SuspendLayout();
             // 
-            // panelTop
+            // panelTop_SVE
             // 
-            panelTop.Controls.Add(buttonAbout);
-            panelTop.Controls.Add(buttonSaveFile);
-            panelTop.Controls.Add(buttonDone);
-            panelTop.Controls.Add(buttonOpenFile);
-            panelTop.Dock = DockStyle.Top;
-            panelTop.Location = new Point(0, 0);
-            panelTop.Name = "panelTop";
-            panelTop.Size = new Size(1133, 89);
-            panelTop.TabIndex = 0;
+            panelTop_SVE.BorderStyle = BorderStyle.FixedSingle;
+            panelTop_SVE.Controls.Add(buttonHelp_SVE);
+            panelTop_SVE.Controls.Add(buttonSave_SVE);
+            panelTop_SVE.Controls.Add(buttonDone_SVE);
+            panelTop_SVE.Controls.Add(buttonOpen_SVE);
+            panelTop_SVE.Dock = DockStyle.Top;
+            panelTop_SVE.Location = new Point(0, 0);
+            panelTop_SVE.Name = "panelTop_SVE";
+            panelTop_SVE.Size = new Size(938, 88);
+            panelTop_SVE.TabIndex = 0;
             // 
-            // buttonAbout
+            // buttonHelp_SVE
             // 
-            buttonAbout.BackColor = SystemColors.Control;
-            buttonAbout.BackgroundImage = Properties.Resources.Help;
-            buttonAbout.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonAbout.Dock = DockStyle.Right;
-            buttonAbout.Location = new Point(1032, 0);
-            buttonAbout.Name = "buttonAbout";
-            buttonAbout.Size = new Size(101, 89);
-            buttonAbout.TabIndex = 3;
-            buttonAbout.UseVisualStyleBackColor = false;
-            buttonAbout.Click += buttonAbout_Click;
+            buttonHelp_SVE.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            buttonHelp_SVE.BackColor = SystemColors.ButtonFace;
+            buttonHelp_SVE.Image = Properties.Resources.icons8_работа_48;
+            buttonHelp_SVE.Location = new Point(839, 3);
+            buttonHelp_SVE.Name = "buttonHelp_SVE";
+            buttonHelp_SVE.Size = new Size(94, 78);
+            buttonHelp_SVE.TabIndex = 0;
+            toolTip_SVE.SetToolTip(buttonHelp_SVE, "О программе");
+            buttonHelp_SVE.UseVisualStyleBackColor = false;
+            buttonHelp_SVE.Click += buttonHelp_SVE_Click;
+            buttonHelp_SVE.MouseEnter += buttonOpen_SVE_MouseEnter;
+            buttonHelp_SVE.MouseLeave += buttonOpen_SVE_MouseLeave;
             // 
-            // buttonSaveFile
+            // buttonSave_SVE
             // 
-            buttonSaveFile.BackgroundImage = Properties.Resources.Printer;
-            buttonSaveFile.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonSaveFile.Dock = DockStyle.Left;
-            buttonSaveFile.FlatStyle = FlatStyle.Flat;
-            buttonSaveFile.Location = new Point(202, 0);
-            buttonSaveFile.Name = "buttonSaveFile";
-            buttonSaveFile.Size = new Size(101, 89);
-            buttonSaveFile.TabIndex = 2;
-            buttonSaveFile.UseVisualStyleBackColor = true;
-            buttonSaveFile.Click += buttonSaveFile_Click;
+            buttonSave_SVE.BackColor = SystemColors.ButtonFace;
+            buttonSave_SVE.Image = Properties.Resources.icons8_скопировать_48;
+            buttonSave_SVE.Location = new Point(203, 3);
+            buttonSave_SVE.Name = "buttonSave_SVE";
+            buttonSave_SVE.Size = new Size(94, 78);
+            buttonSave_SVE.TabIndex = 0;
+            toolTip_SVE.SetToolTip(buttonSave_SVE, "Сохранить файл\r\nВыберите место для сохранения обработанного файла");
+            buttonSave_SVE.UseVisualStyleBackColor = false;
+            buttonSave_SVE.Click += buttonSave_SVE_Click;
+            buttonSave_SVE.MouseEnter += buttonOpen_SVE_MouseEnter;
+            buttonSave_SVE.MouseLeave += buttonOpen_SVE_MouseLeave;
             // 
-            // buttonDone
+            // buttonDone_SVE
             // 
-            buttonDone.BackgroundImage = Properties.Resources.Folder_Search;
-            buttonDone.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonDone.Dock = DockStyle.Left;
-            buttonDone.Enabled = false;
-            buttonDone.FlatStyle = FlatStyle.Flat;
-            buttonDone.Location = new Point(101, 0);
-            buttonDone.Name = "buttonDone";
-            buttonDone.Size = new Size(101, 89);
-            buttonDone.TabIndex = 1;
-            buttonDone.UseVisualStyleBackColor = true;
-            buttonDone.Click += buttonDone_Click;
+            buttonDone_SVE.BackColor = SystemColors.ButtonFace;
+            buttonDone_SVE.Image = Properties.Resources.icons8_документы_48;
+            buttonDone_SVE.Location = new Point(103, 3);
+            buttonDone_SVE.Name = "buttonDone_SVE";
+            buttonDone_SVE.Size = new Size(94, 78);
+            buttonDone_SVE.TabIndex = 0;
+            toolTip_SVE.SetToolTip(buttonDone_SVE, "Выполнить замену чисел в седьмой строке не равных 13 на 0.\r\nВывести результат в поле \"Вывод\"");
+            buttonDone_SVE.UseVisualStyleBackColor = false;
+            buttonDone_SVE.Click += buttonDone_SVE_Click;
+            buttonDone_SVE.MouseEnter += buttonOpen_SVE_MouseEnter;
+            buttonDone_SVE.MouseLeave += buttonOpen_SVE_MouseLeave;
             // 
-            // buttonOpenFile
+            // buttonOpen_SVE
             // 
-            buttonOpenFile.BackgroundImage = Properties.Resources.Folder1;
-            buttonOpenFile.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonOpenFile.Dock = DockStyle.Left;
-            buttonOpenFile.FlatStyle = FlatStyle.Flat;
-            buttonOpenFile.Location = new Point(0, 0);
-            buttonOpenFile.Name = "buttonOpenFile";
-            buttonOpenFile.Size = new Size(101, 89);
-            buttonOpenFile.TabIndex = 0;
-            buttonOpenFile.UseVisualStyleBackColor = true;
-            buttonOpenFile.Click += buttonOpenFile_Click;
+            buttonOpen_SVE.BackColor = SystemColors.ButtonFace;
+            buttonOpen_SVE.Image = Properties.Resources.icons8_добавить_папку_48;
+            buttonOpen_SVE.Location = new Point(3, 3);
+            buttonOpen_SVE.Name = "buttonOpen_SVE";
+            buttonOpen_SVE.Size = new Size(94, 78);
+            buttonOpen_SVE.TabIndex = 0;
+            toolTip_SVE.SetToolTip(buttonOpen_SVE, "Открыть файл\r\nВыберите нужный файл для обработки");
+            buttonOpen_SVE.UseVisualStyleBackColor = false;
+            buttonOpen_SVE.Click += buttonOpen_SVE_Click;
+            buttonOpen_SVE.MouseEnter += buttonOpen_SVE_MouseEnter;
+            buttonOpen_SVE.MouseLeave += buttonOpen_SVE_MouseLeave;
             // 
-            // panelCondition
+            // panelTask_SVE
             // 
-            panelCondition.Controls.Add(groupBoxCondition);
-            panelCondition.Dock = DockStyle.Top;
-            panelCondition.Location = new Point(0, 89);
-            panelCondition.Name = "panelCondition";
-            panelCondition.Size = new Size(1133, 125);
-            panelCondition.TabIndex = 1;
+            panelTask_SVE.Controls.Add(groupBoxTask_SVE);
+            panelTask_SVE.Dock = DockStyle.Top;
+            panelTask_SVE.Location = new Point(0, 88);
+            panelTask_SVE.Name = "panelTask_SVE";
+            panelTask_SVE.Size = new Size(938, 92);
+            panelTask_SVE.TabIndex = 1;
             // 
-            // groupBoxCondition
+            // groupBoxTask_SVE
             // 
-            groupBoxCondition.Controls.Add(label1);
-            groupBoxCondition.Dock = DockStyle.Fill;
-            groupBoxCondition.Location = new Point(0, 0);
-            groupBoxCondition.Name = "groupBoxCondition";
-            groupBoxCondition.Size = new Size(1133, 125);
-            groupBoxCondition.TabIndex = 0;
-            groupBoxCondition.TabStop = false;
-            groupBoxCondition.Text = "Условие:";
+            groupBoxTask_SVE.Controls.Add(textBoxTask_SVE);
+            groupBoxTask_SVE.Dock = DockStyle.Fill;
+            groupBoxTask_SVE.Location = new Point(0, 0);
+            groupBoxTask_SVE.Name = "groupBoxTask_SVE";
+            groupBoxTask_SVE.Size = new Size(938, 92);
+            groupBoxTask_SVE.TabIndex = 0;
+            groupBoxTask_SVE.TabStop = false;
+            groupBoxTask_SVE.Text = "Условие:";
             // 
-            // splitContainerMain
+            // textBoxTask_SVE
             // 
-            splitContainerMain.Dock = DockStyle.Fill;
-            splitContainerMain.Location = new Point(0, 214);
-            splitContainerMain.Name = "splitContainerMain";
+            textBoxTask_SVE.Dock = DockStyle.Fill;
+            textBoxTask_SVE.Location = new Point(3, 23);
+            textBoxTask_SVE.Multiline = true;
+            textBoxTask_SVE.Name = "textBoxTask_SVE";
+            textBoxTask_SVE.ReadOnly = true;
+            textBoxTask_SVE.Size = new Size(932, 66);
+            textBoxTask_SVE.TabIndex = 0;
+            textBoxTask_SVE.Text = resources.GetString("textBoxTask_SVE.Text");
             // 
-            // splitContainerMain.Panel1
+            // panelLeft_SVE
             // 
-            splitContainerMain.Panel1.Controls.Add(groupBoxInput);
+            panelLeft_SVE.Controls.Add(groupBoxInput_SVE);
+            panelLeft_SVE.Dock = DockStyle.Left;
+            panelLeft_SVE.Location = new Point(0, 180);
+            panelLeft_SVE.Name = "panelLeft_SVE";
+            panelLeft_SVE.Size = new Size(470, 463);
+            panelLeft_SVE.TabIndex = 2;
             // 
-            // splitContainerMain.Panel2
+            // groupBoxInput_SVE
             // 
-            splitContainerMain.Panel2.Controls.Add(groupBoxOut);
-            splitContainerMain.Size = new Size(1133, 440);
-            splitContainerMain.SplitterDistance = 569;
-            splitContainerMain.TabIndex = 2;
+            groupBoxInput_SVE.Controls.Add(dataGridViewIn_SVE);
+            groupBoxInput_SVE.Dock = DockStyle.Fill;
+            groupBoxInput_SVE.Location = new Point(0, 0);
+            groupBoxInput_SVE.Name = "groupBoxInput_SVE";
+            groupBoxInput_SVE.Size = new Size(470, 463);
+            groupBoxInput_SVE.TabIndex = 0;
+            groupBoxInput_SVE.TabStop = false;
+            groupBoxInput_SVE.Text = "Ввод:";
             // 
-            // groupBoxInput
+            // dataGridViewIn_SVE
             // 
-            groupBoxInput.Controls.Add(dataGridViewIn);
-            groupBoxInput.Dock = DockStyle.Fill;
-            groupBoxInput.Location = new Point(0, 0);
-            groupBoxInput.Name = "groupBoxInput";
-            groupBoxInput.Size = new Size(569, 440);
-            groupBoxInput.TabIndex = 0;
-            groupBoxInput.TabStop = false;
-            groupBoxInput.Text = "Ввод:";
+            dataGridViewIn_SVE.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewIn_SVE.ColumnHeadersVisible = false;
+            dataGridViewIn_SVE.Dock = DockStyle.Fill;
+            dataGridViewIn_SVE.Location = new Point(3, 23);
+            dataGridViewIn_SVE.Name = "dataGridViewIn_SVE";
+            dataGridViewIn_SVE.RowHeadersVisible = false;
+            dataGridViewIn_SVE.RowHeadersWidth = 51;
+            dataGridViewIn_SVE.Size = new Size(464, 437);
+            dataGridViewIn_SVE.TabIndex = 0;
             // 
-            // dataGridViewIn
+            // splitterPanel_SVE
             // 
-            dataGridViewIn.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewIn.Dock = DockStyle.Fill;
-            dataGridViewIn.Location = new Point(3, 23);
-            dataGridViewIn.Name = "dataGridViewIn";
-            dataGridViewIn.RowHeadersVisible = false;
-            dataGridViewIn.RowHeadersWidth = 51;
-            dataGridViewIn.Size = new Size(563, 414);
-            dataGridViewIn.TabIndex = 0;
+            splitterPanel_SVE.Location = new Point(470, 180);
+            splitterPanel_SVE.Name = "splitterPanel_SVE";
+            splitterPanel_SVE.Size = new Size(4, 463);
+            splitterPanel_SVE.TabIndex = 3;
+            splitterPanel_SVE.TabStop = false;
             // 
-            // groupBoxOut
+            // panelRight_SVE
             // 
-            groupBoxOut.Controls.Add(dataGridViewOut);
-            groupBoxOut.Dock = DockStyle.Fill;
-            groupBoxOut.Location = new Point(0, 0);
-            groupBoxOut.Name = "groupBoxOut";
-            groupBoxOut.Size = new Size(560, 440);
-            groupBoxOut.TabIndex = 0;
-            groupBoxOut.TabStop = false;
-            groupBoxOut.Text = "Вывод:";
+            panelRight_SVE.Controls.Add(groupBoxOutput_SVE);
+            panelRight_SVE.Dock = DockStyle.Fill;
+            panelRight_SVE.Location = new Point(474, 180);
+            panelRight_SVE.Name = "panelRight_SVE";
+            panelRight_SVE.Size = new Size(464, 463);
+            panelRight_SVE.TabIndex = 4;
             // 
-            // dataGridViewOut
+            // groupBoxOutput_SVE
             // 
-            dataGridViewOut.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewOut.Dock = DockStyle.Fill;
-            dataGridViewOut.Location = new Point(3, 23);
-            dataGridViewOut.Name = "dataGridViewOut";
-            dataGridViewOut.RowHeadersVisible = false;
-            dataGridViewOut.RowHeadersWidth = 51;
-            dataGridViewOut.Size = new Size(554, 414);
-            dataGridViewOut.TabIndex = 0;
+            groupBoxOutput_SVE.Controls.Add(dataGridViewOut_SVE);
+            groupBoxOutput_SVE.Dock = DockStyle.Fill;
+            groupBoxOutput_SVE.Location = new Point(0, 0);
+            groupBoxOutput_SVE.Name = "groupBoxOutput_SVE";
+            groupBoxOutput_SVE.Size = new Size(464, 463);
+            groupBoxOutput_SVE.TabIndex = 0;
+            groupBoxOutput_SVE.TabStop = false;
+            groupBoxOutput_SVE.Text = "Вывод:";
             // 
-            // openFileDialog
+            // dataGridViewOut_SVE
             // 
-            openFileDialog.FileName = "openFileDialog1";
+            dataGridViewOut_SVE.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewOut_SVE.ColumnHeadersVisible = false;
+            dataGridViewOut_SVE.Dock = DockStyle.Fill;
+            dataGridViewOut_SVE.Location = new Point(3, 23);
+            dataGridViewOut_SVE.Name = "dataGridViewOut_SVE";
+            dataGridViewOut_SVE.RowHeadersVisible = false;
+            dataGridViewOut_SVE.RowHeadersWidth = 51;
+            dataGridViewOut_SVE.Size = new Size(458, 437);
+            dataGridViewOut_SVE.TabIndex = 0;
             // 
-            // label1
+            // toolTip_SVE
             // 
-            label1.Dock = DockStyle.Fill;
-            label1.Location = new Point(3, 23);
-            label1.Name = "label1";
-            label1.Size = new Size(1127, 99);
-            label1.TabIndex = 0;
-            label1.Text = resources.GetString("label1.Text");
+            toolTip_SVE.IsBalloon = true;
+            toolTip_SVE.ToolTipTitle = "Подсказка";
             // 
-            // FormMain
+            // openFileDialog_SVE
+            // 
+            openFileDialog_SVE.FileName = "openFileDialog1";
+            // 
+            // FormMain_SVE
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1133, 654);
-            Controls.Add(splitContainerMain);
-            Controls.Add(panelCondition);
-            Controls.Add(panelTop);
-            Name = "FormMain";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Sprint 6 | Task 7 | V28 | Safronov V. E.";
-            WindowState = FormWindowState.Maximized;
-            panelTop.ResumeLayout(false);
-            panelCondition.ResumeLayout(false);
-            groupBoxCondition.ResumeLayout(false);
-            splitContainerMain.Panel1.ResumeLayout(false);
-            splitContainerMain.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)splitContainerMain).EndInit();
-            splitContainerMain.ResumeLayout(false);
-            groupBoxInput.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridViewIn).EndInit();
-            groupBoxOut.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridViewOut).EndInit();
+            ClientSize = new Size(938, 643);
+            Controls.Add(panelRight_SVE);
+            Controls.Add(splitterPanel_SVE);
+            Controls.Add(panelLeft_SVE);
+            Controls.Add(panelTask_SVE);
+            Controls.Add(panelTop_SVE);
+            Name = "FormMain_SVE";
+            Text = "Спринт 6 | Таск 7 | Вариант 28 | Сафронов В. Е.";
+            Load += FormMain_SVE_Load;
+            panelTop_SVE.ResumeLayout(false);
+            panelTask_SVE.ResumeLayout(false);
+            groupBoxTask_SVE.ResumeLayout(false);
+            groupBoxTask_SVE.PerformLayout();
+            panelLeft_SVE.ResumeLayout(false);
+            groupBoxInput_SVE.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewIn_SVE).EndInit();
+            panelRight_SVE.ResumeLayout(false);
+            groupBoxOutput_SVE.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewOut_SVE).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panelTop;
-        private Panel panelCondition;
-        private SplitContainer splitContainerMain;
-        private GroupBox groupBoxInput;
-        private GroupBox groupBoxOut;
-        private GroupBox groupBoxCondition;
-        private Button buttonOpenFile;
-        private Button buttonAbout;
-        private Button buttonSaveFile;
-        private Button buttonDone;
-        private DataGridView dataGridViewIn;
-        private DataGridView dataGridViewOut;
-        private OpenFileDialog openFileDialog;
-        private ToolTip toolTip;
-        private SaveFileDialog saveFileDialog;
-        private Label label1;
+        private Panel panelTop_SVE;
+        private Panel panelTask_SVE;
+        private Panel panelLeft_SVE;
+        private Splitter splitterPanel_SVE;
+        private Panel panelRight_SVE;
+        private Button buttonHelp_SVE;
+        private Button buttonSave_SVE;
+        private Button buttonDone_SVE;
+        private Button buttonOpen_SVE;
+        private GroupBox groupBoxTask_SVE;
+        private TextBox textBoxTask_SVE;
+        private GroupBox groupBoxInput_SVE;
+        private DataGridView dataGridViewIn_SVE;
+        private GroupBox groupBoxOutput_SVE;
+        private DataGridView dataGridViewOut_SVE;
+        private ToolTip toolTip_SVE;
+        private OpenFileDialog openFileDialog_SVE;
+        private SaveFileDialog saveFileDialog_SVE;
     }
 }

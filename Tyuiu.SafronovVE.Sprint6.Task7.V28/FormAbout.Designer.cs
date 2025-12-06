@@ -1,6 +1,6 @@
 ﻿namespace Tyuiu.SafronovVE.Sprint6.Task7.V28
 {
-    partial class FormAbout
+    partial class FormAbout_SVE
     {
         /// <summary>
         /// Required designer variable.
@@ -28,67 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
-            pictureBoxAvatar = new PictureBox();
-            labelAbout = new Label();
-            buttonOK = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatar).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout_SVE));
+            pictureBoxAvatar_SVE = new PictureBox();
+            labelInfo_SVE = new Label();
+            buttonOK_SVE = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatar_SVE).BeginInit();
             SuspendLayout();
             // 
-            // pictureBoxAvatar
+            // pictureBoxAvatar_SVE
             // 
-            pictureBoxAvatar.BackgroundImage = Properties.Resources.photo_2025_10_11_16_41_40;
-            pictureBoxAvatar.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBoxAvatar.Location = new Point(12, 12);
-            pictureBoxAvatar.Name = "pictureBoxAvatar";
-            pictureBoxAvatar.Size = new Size(223, 261);
-            pictureBoxAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBoxAvatar.TabIndex = 0;
-            pictureBoxAvatar.TabStop = false;
+            pictureBoxAvatar_SVE.Image = Properties.Resources.photo_2025_10_11_16_41_40;
+            pictureBoxAvatar_SVE.Location = new Point(12, 12);
+            pictureBoxAvatar_SVE.Name = "pictureBoxAvatar_SVE";
+            pictureBoxAvatar_SVE.Size = new Size(176, 222);
+            pictureBoxAvatar_SVE.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxAvatar_SVE.TabIndex = 0;
+            pictureBoxAvatar_SVE.TabStop = false;
             // 
-            // labelAbout
+            // labelInfo_SVE
             // 
-            labelAbout.AutoSize = true;
-            labelAbout.Font = new Font("Segoe UI", 10F);
-            labelAbout.Location = new Point(258, 12);
-            labelAbout.Name = "labelAbout";
-            labelAbout.Size = new Size(438, 207);
-            labelAbout.TabIndex = 1;
-            labelAbout.Text = resources.GetString("labelAbout.Text");
+            labelInfo_SVE.AutoSize = true;
+            labelInfo_SVE.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            labelInfo_SVE.Location = new Point(194, 12);
+            labelInfo_SVE.Name = "labelInfo_SVE";
+            labelInfo_SVE.Size = new Size(387, 220);
+            labelInfo_SVE.TabIndex = 1;
+            labelInfo_SVE.Text = resources.GetString("labelInfo_SVE.Text");
             // 
-            // buttonOK
+            // buttonOK_SVE
             // 
-            buttonOK.Location = new Point(602, 234);
-            buttonOK.Name = "buttonOK";
-            buttonOK.Size = new Size(126, 39);
-            buttonOK.TabIndex = 2;
-            buttonOK.Text = "Ok";
-            buttonOK.UseVisualStyleBackColor = true;
-            buttonOK.Click += buttonOK_Click;
+            buttonOK_SVE.Location = new Point(498, 205);
+            buttonOK_SVE.Name = "buttonOK_SVE";
+            buttonOK_SVE.Size = new Size(102, 29);
+            buttonOK_SVE.TabIndex = 2;
+            buttonOK_SVE.Text = "Ok";
+            buttonOK_SVE.UseVisualStyleBackColor = true;
+            buttonOK_SVE.Click += buttonOK_SVE_Click;
             // 
-            // FormAbout
+            // FormAbout_SVE
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(740, 282);
-            Controls.Add(buttonOK);
-            Controls.Add(labelAbout);
-            Controls.Add(pictureBoxAvatar);
+            ClientSize = new Size(612, 253);
+            Controls.Add(buttonOK_SVE);
+            Controls.Add(labelInfo_SVE);
+            Controls.Add(pictureBoxAvatar_SVE);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
-            MinimizeBox = false;
-            Name = "FormAbout";
+            Name = "FormAbout_SVE";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "О программе";
-            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatar_SVE).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBoxAvatar;
-        private Label labelAbout;
-        private Button buttonOK;
+        private PictureBox pictureBoxAvatar_SVE;
+        private Label labelInfo_SVE;
+        private Button buttonOK_SVE;
     }
 }

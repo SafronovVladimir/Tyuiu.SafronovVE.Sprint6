@@ -63,9 +63,9 @@ namespace Tyuiu.SafronovVE.Sprint6.Task7.V28.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Folder {
+        internal static System.Drawing.Bitmap icons8_добавить_папку_48 {
             get {
-                object obj = ResourceManager.GetObject("Folder", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-добавить-папку-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Tyuiu.SafronovVE.Sprint6.Task7.V28.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Folder_Search {
+        internal static System.Drawing.Bitmap icons8_документы_48 {
             get {
-                object obj = ResourceManager.GetObject("Folder Search", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-документы-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace Tyuiu.SafronovVE.Sprint6.Task7.V28.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Folder1 {
+        internal static System.Drawing.Bitmap icons8_работа_48 {
             get {
-                object obj = ResourceManager.GetObject("Folder1", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-работа-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace Tyuiu.SafronovVE.Sprint6.Task7.V28.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Help {
+        internal static System.Drawing.Bitmap icons8_скопировать_48 {
             get {
-                object obj = ResourceManager.GetObject("Help", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-скопировать-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,16 +106,6 @@ namespace Tyuiu.SafronovVE.Sprint6.Task7.V28.Properties {
         internal static System.Drawing.Bitmap photo_2025_10_11_16_41_40 {
             get {
                 object obj = ResourceManager.GetObject("photo_2025-10-11_16-41-40", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Printer {
-            get {
-                object obj = ResourceManager.GetObject("Printer", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

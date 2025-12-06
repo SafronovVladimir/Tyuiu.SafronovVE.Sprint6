@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Tyuiu.SafronovVE.Sprint6.Task7.V28
 {
-    public partial class FormAbout : Form
+    public partial class FormAbout_SVE : Form
     {
-        public FormAbout()
+        public FormAbout_SVE()
         {
             InitializeComponent();
         }
 
-        private void buttonOK_Click(object sender, EventArgs e)
+        private void buttonOK_SVE_Click(object sender, EventArgs e)
         {
             Close();
         }
